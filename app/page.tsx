@@ -60,9 +60,12 @@ export default function Home() {
                                         Грузоперевозки <br className="hidden lg:block" />
                                         <span className="text-yellow-400 lg:text-black">по всей Грузии.</span>
                                     </h1>
-                                    <p className="text-base md:text-lg text-gray-200 lg:text-black/80 mb-8 leading-relaxed max-w-xl font-medium">
+                                    <p className="hidden md:block text-lg text-gray-200 lg:text-black/80 mb-8 leading-relaxed max-w-xl font-medium">
                                         Подача машины за 30 минут в Тбилиси и Батуми.
                                         Гарантируем полную сохранность груза.
+                                    </p>
+                                    <p className="md:hidden text-base text-gray-100 mb-6 font-medium">
+                                        Подача за 30 мин. Полная сохранность груза.
                                     </p>
 
                                     <div className="flex flex-col gap-3">
@@ -114,7 +117,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Квартирный переезд</h3>
-                                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                                             Упакуем вещи в пузырчатую пленку и картон, перевезем, расставим мебель на новом месте. Вам не придется паковать хрупкое самостоятельно.
                                                         </p>
                                                         <Link href="/service/moving" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -137,7 +140,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Офисный переезд</h3>
-                                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                                             Перевозим технику, мебель и архивы с документами. Принимаем безнал, выдаем закрывающие документы. Работаем по графику — ваш бизнес не встанет.
                                                         </p>
                                                         <Link href="/service/office" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -163,7 +166,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Услуги грузчиков</h3>
-                                                        <p className="text-black leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-black leading-relaxed mb-6">
                                                             Трезвые ребята с инструментами. Разберут шкаф, вынесут холодильник с 9 этажа, загрузят фуру. Есть тележки, стяжки и защитные перчатки.
                                                         </p>
                                                         <Link href="/service/movers" className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-yellow-400 font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -186,7 +189,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Вывоз мусора</h3>
-                                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                                             Вывозим строительный мусор и старую мебель на официальный полигон. Никаких свалок в лесу и штрафов от мэрии.
                                                         </p>
                                                         <Link href="/trash" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -209,7 +212,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Грузовое такси</h3>
-                                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                                             Купили диван, холодильник или стройматериалы? Довезем от магазина до двери за час. Подходим для 1-2 предметов, когда полная машина не нужна.
                                                         </p>
                                                         <Link href="/service/taxi" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -232,7 +235,7 @@ export default function Home() {
                                                     {/* Content */}
                                                     <div className="p-5 md:p-8">
                                                         <h3 className="text-2xl font-bold text-black mb-4">Междугородние рейсы</h3>
-                                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                                             Регулярно ездим по маршруту Тбилиси — Батуми и обратно. Вещи в крытом кузове, страхуем груз на время поездки. Доставка за 1 день.
                                                         </p>
                                                         <Link href="/service/intercity" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
@@ -391,7 +394,7 @@ export default function Home() {
                                                     </div>
                                                     <h3 className="text-xl font-bold text-black mb-2">Минивэн</h3>
                                                     <p className="text-gray-600 font-semibold mb-1">Грузоподъёмность: до 800 кг</p>
-                                                    <p className="text-gray-500 text-sm">Идеален для небольших грузов</p>
+                                                    <p className="hidden md:block text-gray-500 text-sm">Идеален для небольших грузов</p>
                                                 </div>
 
                                                 {/* Спринтер */}
@@ -408,7 +411,7 @@ export default function Home() {
                                                     </div>
                                                     <h3 className="text-xl font-bold text-black mb-2">Спринтер</h3>
                                                     <p className="text-gray-600 font-semibold mb-1">Грузоподъёмность: до 1,5 тонн</p>
-                                                    <p className="text-gray-500 text-sm">Оптимален для квартирных переездов</p>
+                                                    <p className="hidden md:block text-gray-500 text-sm">Оптимален для квартирных переездов</p>
                                                 </div>
 
                                                 {/* Большой грузовик */}
@@ -425,7 +428,7 @@ export default function Home() {
                                                     </div>
                                                     <h3 className="text-xl font-bold text-black mb-2">Большой грузовик</h3>
                                                     <p className="text-gray-600 font-semibold mb-1">Грузоподъёмность: до 5 тонн</p>
-                                                    <p className="text-gray-500 text-sm">Для крупных грузов и офисных переездов</p>
+                                                    <p className="hidden md:block text-gray-500 text-sm">Для крупных грузов и офисных переездов</p>
                                                 </div>
 
                                                 {/* Грузовик для мусора */}
@@ -442,7 +445,7 @@ export default function Home() {
                                                     </div>
                                                     <h3 className="text-xl font-bold text-black mb-2">Грузовик для мусора</h3>
                                                     <p className="text-gray-600 font-semibold mb-1">Грузоподъёмность: до 3 тонн</p>
-                                                    <p className="text-gray-500 text-sm">Вывоз строительного мусора на легальную свалку</p>
+                                                    <p className="hidden md:block text-gray-500 text-sm">Вывоз строительного мусора на легальную свалку</p>
                                                 </div>
                                             </div>
 
