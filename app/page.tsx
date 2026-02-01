@@ -639,13 +639,21 @@ export default function Home() {
                             <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
                                 Работаем по всей Грузии
                             </h2>
-                            <p className="text-lg text-gray-800 leading-relaxed mb-6 font-medium">
-                                Наши машины базируются в <span className="font-bold text-black bg-yellow-400/30 px-2 py-1 rounded">Тбилиси, Батуми, Кутаиси, Рустави и Кобулети</span>.
-                                Это значит, что вам не придется ждать грузовик из столицы — мы подаем технику из ближайшего города за 30-40 минут.
-                            </p>
-                            <p className="text-gray-700 leading-relaxed font-medium">
-                                Везем грузы между регионами, в горные районы (Гудаури, Степанцминда, Местиа), на побережье (Уреки, Гонио, Квариати)
-                                и по Кахетии. Если вы релоцируетесь из Тбилиси в Батуми или переезжаете на дачу в Боржоми — маршрут отработан.
+                            {/* Desktop Text */}
+                            <div className="hidden md:block">
+                                <p className="text-lg text-gray-800 leading-relaxed mb-6 font-medium">
+                                    Наши машины базируются в <span className="font-bold text-black bg-yellow-400/30 px-2 py-1 rounded">Тбилиси, Батуми, Кутаиси, Рустави и Кобулети</span>.
+                                    Это значит, что вам не придется ждать грузовик из столицы — мы подаем технику из ближайшего города за 30-40 минут.
+                                </p>
+                                <p className="text-gray-700 leading-relaxed font-medium">
+                                    Везем грузы между регионами, в горные районы (Гудаури, Степанцминда, Местиа), на побережье (Уреки, Гонио, Квариати)
+                                    и по Кахетии. Если вы релоцируетесь из Тбилиси в Батуми или переезжаете на дачу в Боржоми — маршрут отработан.
+                                </p>
+                            </div>
+
+                            {/* Mobile Text */}
+                            <p className="md:hidden text-base text-gray-800 leading-relaxed font-medium">
+                                Работаем по всей Грузии: Тбилиси, Батуми, Кутаиси и любые регионы (горы, побережье). Подача машины из ближайшего города за 30 минут.
                             </p>
                         </div>
                     </div>
@@ -660,7 +668,7 @@ export default function Home() {
 
 
                 {/* SEO TEXT BLOCK */}
-                <section className="py-20 bg-gray-50">
+                <section className="hidden md:block py-20 bg-gray-50">
                     <div className="container mx-auto px-4">
                         <div className="max-w-5xl mx-auto">
                             {/* Header with icon */}
