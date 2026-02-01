@@ -31,12 +31,12 @@ export default function FloatingContactWidget() {
     ];
 
     return (
-        <div className="fixed bottom-8 right-8 z-[1000]">
+        <div className="fixed bottom-28 md:bottom-8 right-4 md:right-8 z-[1000]">
             {/* Submenu Buttons */}
             <div
                 className={`absolute bottom-20 right-0 flex flex-col gap-3 transition-all duration-500 ${isOpen
-                        ? 'opacity-100 translate-y-0 pointer-events-auto'
-                        : 'opacity-0 translate-y-8 pointer-events-none'
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 translate-y-8 pointer-events-none'
                     }`}
             >
                 {contactLinks.map((link, index) => (
