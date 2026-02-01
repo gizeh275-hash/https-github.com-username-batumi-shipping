@@ -210,40 +210,67 @@ export default function Header() {
 
                 {/* Mobile Navigation */}
                 {isOpen && (
-                    <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-slide-down">
-                        <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">{t.nav.home}</Link>
-                        <Link href="/batumi" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">{t.nav.batumi}</Link>
-                        <Link href="/tbilisi" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">{t.nav.tbilisi}</Link>
-                        <Link href="/cities" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">Города</Link>
-                        <Link href="/services" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">{t.nav.services}</Link>
-                        <Link href="/pricing" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">Цены</Link>
-                        <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">О нас</Link>
-                        <Link href="/tips" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">Советы</Link>
-                        <Link href="/faq" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">FAQ</Link>
-                        <Link href="/contacts" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition">Контакты</Link>
+                    <div className="md:hidden mt-4 pb-24 flex flex-col gap-4 animate-slide-down h-[calc(100vh-80px)] overflow-y-auto">
+                        <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border-white/5 pb-2">{t.nav.home}</Link>
 
-                        <div className="flex items-center gap-2">
+                        {/* Mobile Services */}
+                        <div className="border-b border-white/5 pb-2">
+                            <div
+                                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                                className="flex items-center justify-between cursor-pointer py-1"
+                            >
+                                <span className="font-medium">{t.nav.services}</span>
+                                <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                            </div>
+
+                            {isServicesOpen && (
+                                <div className="pl-4 mt-2 space-y-3 border-l-2 border-white/10 ml-1">
+                                    <Link href="/service/moving" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Квартирный переезд</Link>
+                                    <Link href="/service/office" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Офисный переезд</Link>
+                                    <Link href="/service/movers" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Услуги грузчиков</Link>
+                                    <Link href="/service/trash" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Вывоз мусора</Link>
+                                    <Link href="/service/taxi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Грузовое такси</Link>
+                                    <Link href="/service/intercity" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Междугородние рейсы</Link>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Mobile Cities */}
+                        <div className="border-b border-white/5 pb-2">
+                            <div
+                                onClick={() => setIsCitiesOpen(!isCitiesOpen)}
+                                className="flex items-center justify-between cursor-pointer py-1"
+                            >
+                                <span className="font-medium">Города</span>
+                                <ChevronDown className={`w-4 h-4 transition-transform ${isCitiesOpen ? 'rotate-180' : ''}`} />
+                            </div>
+
+                            {isCitiesOpen && (
+                                <div className="pl-4 mt-2 space-y-3 border-l-2 border-white/10 ml-1">
+                                    <Link href="/batumi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Батуми</Link>
+                                    <Link href="/tbilisi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Тбилиси</Link>
+                                    <Link href="/kutaisi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Кутаиси</Link>
+                                    <Link href="/cities" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-yellow-400 mt-2">Все города →</Link>
+                                </div>
+                            )}
+                        </div>
+
+                        <Link href="/pricing" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border-white/5 pb-2">Цены</Link>
+                        <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border-white/5 pb-2">О нас</Link>
+                        <Link href="/contacts" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border-white/5 pb-2">Контакты</Link>
+
+                        <div className="flex items-center gap-2 mt-2">
                             <Globe className="w-4 h-4" />
                             <select
                                 value={lang}
                                 onChange={(e) => setLang(e.target.value as Language)}
-                                className="bg-transparent border border-white/20 rounded px-2 py-1 outline-none"
+                                className="bg-transparent border border-white/20 rounded px-2 py-1 outline-none text-white bg-black/50"
                             >
                                 <option value="ru">Русский</option>
                                 <option value="en">English</option>
                                 <option value="ka">ქართული</option>
                             </select>
                         </div>
-
-                        <a
-                            href={BOT_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="gradient-bg px-6 py-3 rounded-full font-semibold text-center"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            {t.hero.cta}
-                        </a>
                     </div>
                 )}
             </nav>

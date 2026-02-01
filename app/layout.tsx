@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import FloatingContactWidget from '@/components/FloatingContactWidget';
 import ScrollToTop from '@/components/ScrollToTop';
+import MobileFloatingNav from '@/components/MobileFloatingNav';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
                 {children}
                 <FloatingContactWidget />
                 <ScrollToTop />
+                <MobileFloatingNav />
             </body>
         </html>
     );
