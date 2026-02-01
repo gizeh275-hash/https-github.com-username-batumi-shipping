@@ -619,7 +619,7 @@ export default function Home() {
                 {/* 3. GEOGRAPHY SECTION */}
                 <section className="relative py-32 bg-white overflow-hidden">
                     {/* Background Map */}
-                    <div className="absolute inset-0">
+                    <div className="absolute inset-0 hidden md:block">
                         <Image
                             src="/georgia-map.jpg"
                             alt="Карта Грузии"
