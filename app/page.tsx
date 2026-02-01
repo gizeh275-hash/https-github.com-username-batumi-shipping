@@ -20,7 +20,7 @@ export default function Home() {
                         style={{
                             backgroundImage: "url('/hero-movers.jpg')",
                             backgroundSize: 'cover',
-                            backgroundPosition: 'center',
+                            backgroundPosition: '75% center',
                         }}
                     >
                         {/* Gradient Overlay for Text Readability */}
