@@ -1437,7 +1437,7 @@
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">2</div>
                         <div class="flex-1">
-                            <h3 class="mb-4 text-black font-bold text-2xl">Упаковка техники и документации</h3>
+                            <h3 class="mb-4 text-black font-bold text-xl md:text-2xl">Упаковка техники</h3>
                             
                             <div class="bg-blue-50 p-4 rounded-lg mb-4">
                                 <p class="mb-2 font-bold text-blue-800">💻 Оргтехника</p>
@@ -1456,7 +1456,7 @@
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">3</div>
                         <div class="flex-1">
-                            <h3 class="mb-4 text-black font-bold text-2xl">Разборка и упаковка мебели</h3>
+                            <h3 class="mb-4 text-black font-bold text-xl md:text-2xl">Разборка мебели</h3>
                             <p class="m-0 text-gray-700 leading-relaxed text-lg">
                                 Переговорные столы, стеллажи, шкафы-купе — всё разбираем аккуратно. Кресла перевозим в чехлах, чтобы не испачкать обивку.
                             </p>
@@ -1468,7 +1468,7 @@
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">4</div>
                         <div class="flex-1">
-                            <h3 class="mb-4 text-black font-bold text-2xl">Транспортировка и расстановка</h3>
+                            <h3 class="mb-4 text-black font-bold text-xl md:text-2xl">Перевозка и сборка</h3>
                             <p class="m-0 text-gray-700 leading-relaxed text-lg">
                                 Перевозим, собираем мебель и расставляем строго по плану рассадки (Planogram), который вы утвердите. Каждый сотрудник придет на готовое рабочее место.
                             </p>
@@ -1480,7 +1480,7 @@
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">5</div>
                         <div class="flex-1">
-                            <h3 class="mb-4 text-black font-bold text-2xl">Клининг после переезда</h3>
+                            <h3 class="mb-4 text-black font-bold text-xl md:text-2xl">Уборка мусора</h3>
                             <p class="m-0 text-gray-700 leading-relaxed text-lg">
                                 Вывозим за собой горы использованного скотча, пленки и картона. Офис готов к работе — сотрудники не увидят хаоса.
                             </p>
