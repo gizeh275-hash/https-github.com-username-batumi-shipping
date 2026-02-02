@@ -48,7 +48,7 @@ export default function Home() {
                                     </div>
 
                                     <p className="text-xs font-bold mb-3 uppercase tracking-widest text-yellow-400 lg:text-black/60">
-                                        Georgia Moving
+                                        PereezdGe
                                     </p>
                                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight shadow-black/50 lg:shadow-none">
                                         Грузоперевозки <br className="hidden lg:block" />

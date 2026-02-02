@@ -24,8 +24,7 @@ export default function Header() {
                         href="/"
                         className="flex items-center gap-2 text-xl font-bold cursor-pointer"
                     >
-                        <Truck className="w-8 h-8 text-primary-400" />
-                        <span className="gradient-text">Georgia Moving</span>
+                        <span className="gradient-text text-2xl">PereezdGe.com</span>
                     </Link>
 
                     {/* Desktop Navigation */}
