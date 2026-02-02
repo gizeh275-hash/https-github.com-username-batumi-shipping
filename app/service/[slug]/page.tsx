@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CitiesScroll from '@/components/CitiesScroll';
@@ -47,6 +47,11 @@ export default async function ServiceDetailPage({ params }: Props) {
         notFound();
     }
 
+    // Redirect /service/trash to /trash
+    if (slug === 'trash') {
+        redirect('/trash');
+    }
+
     // Determine base service (e.g., "trash" from "batumi_trash")
     let baseServiceSlug = slug;
     for (const city of CITIES) {
@@ -74,7 +79,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative py-32 bg-gradient-to-br from-yellow-50 to-white">
+                <section className={`relative py-12 md:py-32 bg-gradient-to-br from-yellow-50 to-white ${slug === 'moving' ? 'hidden md:block' : ''}`}>
                     {/* ... content ... */}
                     <div className="container mx-auto px-4">
                         <div className="max-w-4xl mx-auto text-center">
@@ -83,14 +88,14 @@ export default async function ServiceDetailPage({ params }: Props) {
                                     {service.badge}
                                 </span>
                             )}
-                            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
                                 {service.title}
                             </h1>
-                            <p className="text-2xl text-gray-600 mb-8">
+                            <p className="text-lg md:text-2xl text-gray-600 mb-8">
                                 {service.desc_short}
                             </p>
                             <div className="flex items-center justify-center gap-4 mb-8">
-                                <div className="text-4xl font-bold text-yellow-600">
+                                <div className="text-3xl md:text-4xl font-bold text-yellow-600">
                                     {service.price}
                                 </div>
                             </div>
@@ -98,7 +103,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                                 href="https://t.me/PereezdBatumiBot"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block gradient-bg px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg"
+                                className="inline-block gradient-bg px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold hover:scale-105 transition-transform shadow-lg"
                             >
                                 Рассчитать стоимость в Telegram
                             </a>
@@ -109,16 +114,18 @@ export default async function ServiceDetailPage({ params }: Props) {
 
 
 
-                {/* City Selection Section - Show for all services except batumi_moving, tbilisi_moving, batumi_movers, tbilisi_movers, batumi_taxi, tbilisi_taxi, batumi_trash, tbilisi_trash, tbilisi_office, batumi_office, and intercity */}
+                {/* City Selection Section - Show for all services except ... */}
                 {slug !== 'batumi_moving' && slug !== 'tbilisi_moving' && slug !== 'batumi_movers' && slug !== 'tbilisi_movers' && slug !== 'batumi_taxi' && slug !== 'tbilisi_taxi' && slug !== 'batumi_trash' && slug !== 'tbilisi_trash' && slug !== 'tbilisi_office' && slug !== 'batumi_office' && slug !== 'intercity' && (
-                    <CitiesScroll cityOverrides={cityOverrides} />
+                    <div className={slug === 'moving' ? 'hidden md:block' : ''}>
+                        <CitiesScroll cityOverrides={cityOverrides} />
+                    </div>
                 )}
 
                 {/* Content Section */}
                 <section className="container mx-auto px-4 pt-8 pb-20">
                     <div className="max-w-4xl mx-auto">
                         <div
-                            className="glass-strong p-10 rounded-2xl prose prose-lg max-w-none"
+                            className="glass-strong p-5 md:p-10 rounded-2xl prose prose-lg max-w-none"
                             dangerouslySetInnerHTML={{ __html: service.content }}
                             style={{
                                 color: '#374151',

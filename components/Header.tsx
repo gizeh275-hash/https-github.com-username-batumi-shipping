@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Truck, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Truck, Globe, ChevronDown, ArrowRight, Phone } from 'lucide-react';
 import { translations, Language } from '@/lib/translations';
 
 export default function Header() {
@@ -14,14 +14,6 @@ export default function Header() {
     const t = translations[lang];
 
     const BOT_URL = 'https://t.me/PereezdBatumiBot';
-
-    const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 glass-strong">
@@ -38,14 +30,14 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-6">
-                        {/* Services Dropdown - MOST IMPORTANT */}
+                        {/* Services Dropdown */}
                         <div
                             className="relative group"
                             onMouseEnter={() => setIsServicesOpen(true)}
                             onMouseLeave={() => setIsServicesOpen(false)}
                         >
                             <button className="flex items-center gap-1 hover:text-primary-400 transition">
-                                Услуги
+                                {t.nav.services}
                                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                             </button>
 
@@ -76,7 +68,7 @@ export default function Header() {
 
                                             {/* Right Column */}
                                             <div className="space-y-4">
-                                                <Link href="/service/trash" className="block hover:bg-white/10 p-3 rounded-lg transition group/item">
+                                                <Link href="/trash" className="block hover:bg-white/10 p-3 rounded-lg transition group/item">
                                                     <h4 className="font-bold text-sm mb-1 group-hover/item:text-primary-400">Вывоз мусора</h4>
                                                     <p className="text-xs text-gray-400">Вывоз строительного мусора и ненужных вещей</p>
                                                 </Link>
@@ -102,7 +94,7 @@ export default function Header() {
                             )}
                         </div>
 
-                        {/* Cities Dropdown - SECOND PRIORITY */}
+                        {/* Cities Dropdown */}
                         <div
                             className="relative group"
                             onMouseEnter={() => setIsCitiesOpen(true)}
@@ -115,54 +107,35 @@ export default function Header() {
 
                             {isCitiesOpen && (
                                 <div className="absolute top-full left-0 pt-2 z-50">
-                                    <div className="glass-strong border border-white/20 rounded-2xl shadow-2xl p-6 min-w-[700px]">
-                                        <div className="grid grid-cols-3 gap-6">
+                                    <div className="glass-strong border border-white/20 rounded-2xl shadow-2xl p-6 min-w-[500px]">
+                                        <div className="grid grid-cols-2 gap-8">
                                             {/* Major Cities */}
                                             <div>
-                                                <h3 className="font-bold text-black mb-3 text-sm">Крупные города</h3>
-                                                <div className="space-y-2">
-                                                    <Link href="/batumi" className="block hover:text-primary-400 transition text-sm">Батуми</Link>
-                                                    <Link href="/tbilisi" className="block hover:text-primary-400 transition text-sm">Тбилиси</Link>
-                                                    <Link href="/kutaisi" className="block hover:text-primary-400 transition text-sm">Кутаиси</Link>
-                                                    <Link href="/rustavi" className="block hover:text-primary-400 transition text-sm">Рустави</Link>
-                                                    <Link href="/poti" className="block hover:text-primary-400 transition text-sm">Поти</Link>
+                                                <h3 className="font-bold text-black mb-4 text-sm uppercase tracking-wider text-opacity-70">Крупные города</h3>
+                                                <div className="space-y-3">
+                                                    <Link href="/batumi" className="block hover:text-primary-400 transition font-medium">Батуми</Link>
+                                                    <Link href="/tbilisi" className="block hover:text-primary-400 transition font-medium">Тбилиси</Link>
+                                                    <Link href="/kutaisi" className="block hover:text-primary-400 transition font-medium">Кутаиси</Link>
+                                                    <Link href="/rustavi" className="block hover:text-primary-400 transition font-medium">Рустави</Link>
+                                                    <Link href="/poti" className="block hover:text-primary-400 transition font-medium">Поти</Link>
                                                 </div>
                                             </div>
 
-                                            {/* Intercity Routes */}
+                                            {/* Popular Routes */}
                                             <div>
-                                                <h3 className="font-bold text-black mb-3 text-sm">Междугородние</h3>
-                                                <div className="space-y-2">
-                                                    <Link href="/cities/tbilisi-batumi" className="block hover:text-primary-400 transition text-sm">Тбилиси — Батуми</Link>
-                                                    <Link href="/cities/batumi-tbilisi" className="block hover:text-primary-400 transition text-sm">Батуми — Тбилиси</Link>
-                                                    <Link href="/cities/tbilisi-kutaisi" className="block hover:text-primary-400 transition text-sm">Тбилиси — Кутаиси</Link>
-                                                    <Link href="/cities/batumi-kutaisi" className="block hover:text-primary-400 transition text-sm">Батуми — Кутаиси</Link>
-                                                    <Link href="/cities/kutaisi-tbilisi" className="block hover:text-primary-400 transition text-sm">Кутаиси — Тбилиси</Link>
-                                                    <Link href="/cities/kutaisi-batumi" className="block hover:text-primary-400 transition text-sm">Кутаиси — Батуми</Link>
+                                                <h3 className="font-bold text-black mb-4 text-sm uppercase tracking-wider text-opacity-70">Популярные маршруты</h3>
+                                                <div className="space-y-3">
+                                                    <Link href="/cities/tbilisi-batumi" className="block hover:text-primary-400 transition font-medium">Тбилиси ↔ Батуми</Link>
+                                                    <Link href="/cities/batumi-tbilisi" className="block hover:text-primary-400 transition font-medium">Батуми ↔ Тбилиси</Link>
+                                                    <Link href="/cities/tbilisi-kutaisi" className="block hover:text-primary-400 transition font-medium">Тбилиси ↔ Кутаиси</Link>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            {/* Regional Cities */}
-                                            <div>
-                                                <h3 className="font-bold text-black mb-3 text-sm">Другие города</h3>
-                                                <div className="space-y-2 max-h-48 overflow-y-auto">
-                                                    <Link href="/cities/kobuleti" className="block hover:text-primary-400 transition text-sm">Кобулети</Link>
-                                                    <Link href="/cities/chakvi" className="block hover:text-primary-400 transition text-sm">Чакви</Link>
-                                                    <Link href="/cities/gonio" className="block hover:text-primary-400 transition text-sm">Гонио</Link>
-                                                    <Link href="/cities/kvariati" className="block hover:text-primary-400 transition text-sm">Квариати</Link>
-                                                    <Link href="/cities/sarpi" className="block hover:text-primary-400 transition text-sm">Сарпи</Link>
-                                                    <Link href="/cities/ureki" className="block hover:text-primary-400 transition text-sm">Уреки</Link>
-                                                    <Link href="/cities/gori" className="block hover:text-primary-400 transition text-sm">Гори</Link>
-                                                    <Link href="/cities/zugdidi" className="block hover:text-primary-400 transition text-sm">Зугдиди</Link>
-                                                    <Link href="/cities/telavi" className="block hover:text-primary-400 transition text-sm">Телави</Link>
-                                                    <Link href="/cities/borjomi" className="block hover:text-primary-400 transition text-sm">Боржоми</Link>
-                                                    <Link href="/cities/gudauri" className="block hover:text-primary-400 transition text-sm">Гудаури</Link>
-                                                    <Link href="/cities/stepantsminda" className="block hover:text-primary-400 transition text-sm">Степанцминда</Link>
-                                                </div>
-                                                <Link href="/cities" className="block mt-3 text-black hover:text-gray-700 font-semibold text-sm">
-                                                    Все города →
-                                                </Link>
-                                            </div>
+                                        <div className="mt-6 pt-4 border-t border-white/10 flex justify-end">
+                                            <Link href="/cities" className="text-black hover:text-primary-400 font-bold text-sm flex items-center gap-1">
+                                                Все города и направления <ArrowRight className="w-4 h-4" />
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -173,6 +146,12 @@ export default function Header() {
                         <Link href="/about" className="hover:text-primary-400 transition">О нас</Link>
                         <Link href="/tips" className="hover:text-primary-400 transition">Советы</Link>
                         <Link href="/contacts" className="hover:text-primary-400 transition">Контакты</Link>
+
+                        {/* Phone Number Desktop */}
+                        <a href="tel:+995597048630" className="flex items-center gap-2 hover:text-primary-400 transition font-bold mr-2">
+                            <Phone className="w-5 h-5 text-green-400 fill-green-400" />
+                            <span>+995 597 048 630</span>
+                        </a>
 
                         {/* Language Switcher */}
                         <div className="flex items-center gap-2 glass px-3 py-1 rounded-full">
@@ -228,7 +207,7 @@ export default function Header() {
                                     <Link href="/service/moving" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Квартирный переезд</Link>
                                     <Link href="/service/office" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Офисный переезд</Link>
                                     <Link href="/service/movers" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Услуги грузчиков</Link>
-                                    <Link href="/service/trash" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Вывоз мусора</Link>
+                                    <Link href="/trash" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Вывоз мусора</Link>
                                     <Link href="/service/taxi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Грузовое такси</Link>
                                     <Link href="/service/intercity" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Междугородние рейсы</Link>
                                 </div>
@@ -271,6 +250,11 @@ export default function Header() {
                                 <option value="ka">ქართული</option>
                             </select>
                         </div>
+
+                        <a href="tel:+995597048630" className="flex items-center gap-2 hover:text-primary-400 transition font-bold mt-2 border-t border-white/5 pt-2">
+                            <Phone className="w-5 h-5 text-green-400" />
+                            <span>+995 597 048 630</span>
+                        </a>
                     </div>
                 )}
             </nav>

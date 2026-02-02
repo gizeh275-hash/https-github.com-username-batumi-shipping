@@ -131,7 +131,7 @@ export default function ServicesPage() {
                                 delay={0.4}
                             />
                         </Link>
-                        <Link href="/service/trash">
+                        <Link href="/trash">
                             <ServiceCard
                                 icon="trash"
                                 title="Вывоз мусора"

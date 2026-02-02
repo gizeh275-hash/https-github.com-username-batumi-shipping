@@ -1,62 +1,45 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://your-domain.com'; // Замените на ваш домен
+    // ⚠️ CHANGE THIS TO YOUR REAL DOMAIN AFTER PURCHASE
+    // Example: const baseUrl = 'https://batumi-shipping.ge';
+    const baseUrl = 'https://pereezdge.com';
 
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/batumi`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/tbilisi`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/services`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/cities`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/pricing`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/tips`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/faq`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-    ];
+    // Core pages
+    const routes = [
+        '',
+        '/services',
+        '/prices',
+        '/about',
+        '/tips',
+        '/contacts',
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: route === '' ? 1 : 0.8,
+    }));
+
+    // Major cities
+    const cities = ['batumi', 'tbilisi', 'kutaisi', 'rustavi', 'poti', 'kobuleti'].map((city) => ({
+        url: `${baseUrl}/${city}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }));
+
+    // Services
+    const services = ['moving', 'office', 'movers', 'taxi', 'intercity'].map((service) => ({
+        url: `${baseUrl}/service/${service}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }));
+
+    return [...routes, ...cities, ...services, {
+        url: `${baseUrl}/trash`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }];
 }

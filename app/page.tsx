@@ -16,12 +16,8 @@ export default function Home() {
                 <section className="relative min-h-[90vh] lg:min-h-screen flex items-end lg:items-center bg-white overflow-hidden">
                     {/* Mobile Background Image (Absolute) */}
                     <div
-                        className="absolute inset-0 lg:hidden z-0"
-                        style={{
-                            backgroundImage: "url('/hero-movers.jpg')",
-                            backgroundSize: 'cover',
-                            backgroundPosition: '75% center',
-                        }}
+                        className="absolute inset-0 lg:hidden z-0 bg-cover bg-[75%_center] bg-no-repeat"
+                        style={{ backgroundImage: "url('/hero-movers.jpg')" }}
                     >
                         {/* Gradient Overlay for Text Readability */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
@@ -33,10 +29,8 @@ export default function Home() {
                             {/* Desktop Image (Hidden on Mobile) */}
                             <div className="hidden lg:block relative overflow-hidden rounded-l-3xl order-1">
                                 <div
-                                    className="absolute inset-0 bg-cover bg-center"
-                                    style={{
-                                        backgroundImage: "url('/hero-movers.jpg')",
-                                    }}
+                                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                                    style={{ backgroundImage: "url('/hero-movers.jpg')" }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-yellow-400/10" />
                             </div>

@@ -1,0 +1,33 @@
+{
+    "nav": {
+        "home": "Home",
+        "batumi": "Batumi",
+        "tbilisi": "Tbilisi",
+        "services": "Services"
+    },
+    "hero": {
+        "title": "Freight Transportation in Georgia",
+        "subtitle": "Professional moving services in Batumi, Tbilisi and throughout the country",
+        "cta": "Calculate Cost in Telegram"
+    },
+    "services": {
+        "title": "Our Services",
+        "moving": "Moving",
+        "movingDesc": "Residential and office relocations",
+        "movers": "Movers",
+        "moversDesc": "Professional movers",
+        "trash": "Waste Removal",
+        "trashDesc": "Fast removal of waste and junk"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Your Name",
+        "phone": "Phone",
+        "message": "Message",
+        "send": "Send"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "contact": "Contact"
+    }
+}
