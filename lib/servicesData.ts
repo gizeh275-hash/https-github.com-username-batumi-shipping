@@ -1405,7 +1405,7 @@
         badge: null,
         desc_short: "Работаем по всей Грузии: Батуми, Тбилиси, Кутаиси и другие города. Офисный переезд 24/7 с минимальным простоем.",
         content: `
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-10 rounded-2xl mb-12 border-l-4 border-blue-500 shadow-sm">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-10 rounded-2xl mb-12 border-l-4 border-blue-500 shadow-sm">
                 <h2 class="mb-6 text-black font-bold text-3xl">💼 Главная боль бизнеса — простой</h2>
                 <p class="mb-4 text-lg leading-relaxed text-blue-900">
                     <strong>Каждый час простоя офиса — это потеря денег.</strong> Срыв дедлайнов, недовольные клиенты, сотрудники, которые не могут работать.
@@ -1418,7 +1418,7 @@
             <h2 class="text-center text-4xl mb-8 text-black font-bold">🏢 Технология офисного переезда</h2>
             
             <div class="max-w-5xl mx-auto mb-12 space-y-6">
-                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-sm">
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm">
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">1</div>
                         <div class="flex-1">
@@ -1433,7 +1433,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white border-2 border-blue-500 rounded-2xl p-8 shadow-md">
+                <div class="bg-white border-2 border-blue-500 rounded-2xl p-6 md:p-8 shadow-md">
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">2</div>
                         <div class="flex-1">
@@ -1452,7 +1452,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8">
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8">
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">3</div>
                         <div class="flex-1">
@@ -1464,7 +1464,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8">
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8">
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">4</div>
                         <div class="flex-1">
@@ -1476,7 +1476,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8">
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8">
                     <div class="flex gap-6 items-start">
                         <div class="bg-blue-500 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-white">5</div>
                         <div class="flex-1">
@@ -1489,7 +1489,7 @@
                 </div>
             </div>
 
-            <div class="bg-gray-100 rounded-2xl p-10 mb-12 border-l-4 border-gray-600">
+            <div class="bg-gray-100 rounded-2xl p-6 md:p-10 mb-12 border-l-4 border-gray-600">
                 <h2 class="mb-6 text-black font-bold text-3xl">⚡ Особенности работы с IT-оборудованием</h2>
                 <p class="mb-6 text-gray-700 leading-relaxed text-lg">
                     <strong>Для IT-компаний и стартапов:</strong> Умеем обращаться с серверными шкафами (Rack), плоттерами и дорогой электроникой.
@@ -1566,41 +1566,56 @@
         badge: "Тбилиси",
         desc_short: "Официальный вывоз мусора в Тбилиси на полигон Глдани/Лило. Строительный мусор, старая мебель. Без штрафов. Работаем во всех районах.",
         content: `
-            <div class="bg-gradient-to-br from-red-100 to-red-200 p-10 rounded-2xl mb-12 border-l-8 border-red-600 shadow-sm">
+            <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 md:p-10 rounded-2xl mb-12 border-l-8 border-red-600 shadow-sm">
                 <h2 class="mb-4 text-red-900 text-3xl font-bold">🏗️ Вывоз мусора в Тбилиси без штрафов</h2>
                 <p class="m-0 text-red-900 leading-relaxed text-lg">Муниципальная инспекция Тбилиси строго следит за баками. Штраф за строительный мусор — от 500 лари. Мы вывезем всё официально на Глданский полигон.</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">💰 Стоимость вывоза мусора (Тбилиси)</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                    <table class="w-full border-collapse">
-                        <thead>
-                            <tr class="bg-gradient-to-br from-red-600 to-red-700 text-white">
-                                <th class="p-4 text-left text-lg">Услуга</th>
-                                <th class="p-4 text-left text-lg">Цена</th>
-                                <th class="p-4 text-left text-lg">Что входит и объем</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Средняя машина (Фургон)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">80 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Оптимально для небольшого ремонта. Вмещает старую мебель (диван, шкаф) или средний объем строительных мешков.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Большая машина (Макси)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">100 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Для масштабного ремонта. Вместительный кузов, куда войдет до 200 мешков мусора, крупногабаритный хлам или длинные доски.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Грузчики (спуск + погрузка)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">от 50 ₾ / чел</td>
-                                <td class="p-5 text-gray-500 text-sm">Спуск мешков даже без лифта. Цена зависит от этажа и объема.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2 class="text-center text-3xl md:text-4xl mb-8 text-black font-bold">💰 Стоимость вывоза мусора (Тбилиси)</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border-2 border-red-100 hover:border-red-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Средняя машина</h3>
+                                <p class="text-sm text-gray-500">Фургон (Ford Transit)</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-red-600">80 ₾</span>
+                                <span class="text-xs text-gray-500">за рейс</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Оптимально для небольшого ремонта. Вмещает старую мебель (диван, шкаф) или до 50 мешков.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-red-100 hover:border-red-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Большая машина</h3>
+                                <p class="text-sm text-gray-500">Макси (Mercedes Sprinter)</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-red-600">100 ₾</span>
+                                <span class="text-xs text-gray-500">за рейс</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Для масштабного ремонта. Вместительный кузов, куда войдет до 200 мешков мусора или длинные доски.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-red-100 hover:border-red-400 transition-all md:col-span-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Грузчики</h3>
+                                <p class="text-sm text-gray-500">Спуск + погрузка</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-red-600">от 50 ₾</span>
+                                <span class="text-xs text-gray-500">за грузчика</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Спуск мешков даже без лифта. Цена зависит от этажа и объема мусора. Мы сами соберем всё в мешки, если нужно.</p>
+                    </div>
                 </div>
             </div>
 
@@ -1652,7 +1667,7 @@
         desc_short: "Перевезем ваш офис в Батуми быстро и аккуратно. Разборка столов, упаковка оргтехники, расстановка на новом месте.",
         content: `
             <!-- Block 1: Hero -->
-            <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-2xl border-l-4 border-gray-600 mb-12">
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-6 md:p-8 rounded-2xl border-l-4 border-gray-600 mb-12">
                 <h2 class="text-gray-900 mb-4 font-bold text-3xl">💼 Офисный переезд под ключ</h2>
                 <p class="text-gray-700 mb-6 text-lg">Понимаем, что простой бизнеса стоит дорого. Поэтому:</p>
                 <div class="grid gap-4 mt-6">
@@ -1663,44 +1678,74 @@
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-4xl mb-8 text-black font-bold">🏢 Стоимость офисного переезда</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                    <table class="w-full border-collapse">
-                        <thead>
-                            <tr class="bg-gradient-to-br from-gray-600 to-gray-700 text-white">
-                                <th class="p-4 text-left text-lg font-semibold">Услуга</th>
-                                <th class="p-4 text-left text-lg font-semibold">Стоимость</th>
-                                <th class="p-4 text-left text-lg font-semibold">Примечание</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Рабочее место (под ключ)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 55 ₾ / место</td>
-                                <td class="p-5 text-gray-500 text-sm">Упаковка, перевозка, расстановка стола, кресла и ПК.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Кабинет руководителя</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 150 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Особо бережная упаковка кожаной мебели и техники.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Грузчики (офис)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 50 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Работа с такелажными ремнями.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Машина (Спринтер)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 50 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Высокий кузов. Вмещает до 6-8 рабочих мест.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-5 font-semibold">Упаковка архива</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">по запросу</td>
-                                <td class="p-5 text-gray-500 text-sm">Предоставляем коробки и маркируем документы.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2 class="text-center text-3xl md:text-4xl mb-8 text-black font-bold">🏢 Стоимость офисного переезда</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-gray-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Рабочее место</h3>
+                                <p class="text-sm text-gray-500">Под ключ</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 55 ₾</span>
+                                <span class="text-xs text-gray-500">за место</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Упаковка, перевозка, расстановка стола, кресла и ПК.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-gray-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Кабинет руководителя</h3>
+                                <p class="text-sm text-gray-500">VIP упаковка</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 150 ₾</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Особо бережная упаковка кожаной мебели и техники.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-gray-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Грузчики (офис)</h3>
+                                <p class="text-sm text-gray-500">Такелаж, ремни</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 50 ₾</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Профессиональная работа с офисной мебелью.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-gray-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Машина (Спринтер)</h3>
+                                <p class="text-sm text-gray-500">Высокий кузов</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 50 ₾</span>
+                                <span class="text-xs text-gray-500">в час</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Вмещает до 6-8 рабочих мест за один рейс.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-100 hover:border-gray-400 transition-all md:col-span-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Упаковка архива</h3>
+                                <p class="text-sm text-gray-500">Коробки + маркировка</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">по запросу</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Предоставляем коробки, упаковываем и маркируем документы для быстрого поиска.</p>
+                    </div>
                 </div>
             </div>
 
@@ -1739,7 +1784,7 @@
             </div>
 
             <!-- Block 4: Batumi-specific Features -->
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-10 rounded-3xl mb-12">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-10 rounded-3xl mb-12">
                 <h2 class="text-center text-3xl mb-8 text-blue-800 font-bold">⭐ Почему бизнесу в Батуми удобно с нами</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500 backdrop-blur-sm">
@@ -2307,51 +2352,81 @@
         desc_short: "Профессиональный переезд офиса в Тбилиси. Перевезем 100 рабочих мест за выходные. Сборка мебели, упаковка серверов.",
         content: `
             <!-- Block 1: Hero -->
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-10 rounded-3xl mb-12">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-10 rounded-3xl mb-12">
                 <h2 class="text-blue-800 mb-6 font-extrabold text-3xl">🏢 Переезд офиса "под ключ"</h2>
                 <p class="text-blue-900 text-lg leading-relaxed">Понимаем, что каждый час простоя — это потеря денег. Поэтому мы организуем переезд так, чтобы в пятницу сотрудники выключили компьютеры в старом офисе, а в понедельник включили их в новом.</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🏢 Стоимость офисного переезда</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                    <table class="w-full border-collapse">
-                        <thead>
-                            <tr class="bg-gradient-to-br from-blue-800 to-blue-900 text-white">
-                                <th class="p-4 text-left text-lg font-semibold">Услуга</th>
-                                <th class="p-4 text-left text-lg font-semibold">Стоимость</th>
-                                <th class="p-4 text-left text-lg font-semibold">Примечание</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Рабочее место (под ключ)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 60 ₾ / место</td>
-                                <td class="p-5 text-gray-500 text-sm">Упаковка, перевозка, расстановка стола, кресла и ПК.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Кабинет руководителя</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 200 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Особо бережная упаковка кожаной мебели и техники.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Грузчики (офис)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 50 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Работа с такелажными ремнями.</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Машина (Спринтер)</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">от 60 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Высокий кузов. Вмещает до 6-8 рабочих мест.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-5 font-semibold">Упаковка архива</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">по запросу</td>
-                                <td class="p-5 text-gray-500 text-sm">Предоставляем коробки и маркируем документы.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2 class="text-center text-3xl md:text-4xl mb-8 text-black font-bold">🏢 Стоимость офисного переезда</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border-2 border-blue-100 hover:border-blue-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Рабочее место</h3>
+                                <p class="text-sm text-gray-500">Под ключ</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 60 ₾</span>
+                                <span class="text-xs text-gray-500">за место</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Упаковка, перевозка, расстановка стола, кресла и ПК.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-blue-100 hover:border-blue-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Кабинет руководителя</h3>
+                                <p class="text-sm text-gray-500">VIP упаковка</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 200 ₾</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Особо бережная упаковка кожаной мебели и техники.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-blue-100 hover:border-blue-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Грузчики (офис)</h3>
+                                <p class="text-sm text-gray-500">Такелаж, ремни</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 50 ₾</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Профессиональная работа с офисной мебелью.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-blue-100 hover:border-blue-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Машина (Спринтер)</h3>
+                                <p class="text-sm text-gray-500">Высокий кузов</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 60 ₾</span>
+                                <span class="text-xs text-gray-500">в час</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Вмещает до 6-8 рабочих мест за один рейс.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-2 border-blue-100 hover:border-blue-400 transition-all md:col-span-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Упаковка архива</h3>
+                                <p class="text-sm text-gray-500">Коробки + маркировка</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">по запросу</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Предоставляем коробки, упаковываем и маркируем документы для быстрого поиска.</p>
+                    </div>
                 </div>
             </div>
 
@@ -2390,7 +2465,7 @@
             </div>
 
             <!-- Block 4: Tbilisi-specific Features -->
-            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-10 rounded-3xl mb-12">
+            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-6 md:p-10 rounded-3xl mb-12">
                 <h2 class="text-center text-3xl mb-8 text-amber-900 font-bold">⭐ Почему бизнесу в столице удобно с нами</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-amber-500 backdrop-blur-sm">
