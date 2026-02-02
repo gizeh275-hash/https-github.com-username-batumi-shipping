@@ -1277,15 +1277,13 @@
                     <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm">
                         <strong>🔒 Сейфы</strong>
                     </div>
-                    <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm">
+                    <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm flex flex-col items-center justify-center">
                         <strong>🖥️ Серверные шкафы</strong>
                     </div>
-                    <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm">
+                    <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm flex flex-col items-center justify-center">
                         <strong>🏧 Банкоматы</strong>
                     </div>
-                    <div class="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm">
-                        <strong>🏪 Торговое оборудование</strong>
-                    </div>
+
                 </div>
                 <p class="mt-6 text-sm text-amber-300">
                     💰 Для таких задач цена рассчитывается индивидуально (за вес/этаж).
