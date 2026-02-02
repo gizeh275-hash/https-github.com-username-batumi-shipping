@@ -1013,6 +1013,150 @@
         `,
     },
 
+    trash: {
+        title: "Вывоз строительного мусора и старой мебели в Тбилиси и Батуми. С грузчиками и утилизацией на полигоне",
+        price: "от 80 ₾",
+        icon: "trash",
+        badge: null,
+        desc_short: "Работаем по всей Грузии: Батуми, Тбилиси, Кутаиси. Вывоз строительного мусора, старой мебели и техники на официальный полигон.",
+        content: `
+            <div style="background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%); padding: 2.5rem; border-radius: 1rem; margin-bottom: 3rem; border-left: 5px solid #DC2626; box-shadow: 0 4px 12px rgba(220,38,38,0.2);">
+                <h2 style="margin: 0 0 1.5rem 0; color: #000; font-size: 1.8rem;">⚠️ ВНИМАНИЕ! Не выбрасывайте мусор в обычные баки</h2>
+                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 1rem;">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #DC2626; font-size: 1.3rem;">📜 О законе</h3>
+                    <p style="margin: 0; color: #7F1D1D; line-height: 1.7; font-size: 1.05rem;">
+                        <strong>В Грузии запрещено</strong> выбрасывать строительные отходы (плитку, бетон, кирпичи, штукатурку) в городские мусорные баки. <strong>Штрафы высокие!</strong>
+                    </p>
+                </div>
+                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem;">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #059669; font-size: 1.3rem;">✓ Наше решение</h3>
+                    <p style="margin: 0; color: #374151; line-height: 1.7;">
+                        Мы вывозим мусор <strong>официально</strong> на специализированные свалки (полигоны). Вы получаете чистую квартиру и никаких проблем с соседями или муниципальной инспекцией.
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">🗑️ Что именно мы вывозим</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
+                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🏗️ Строительный мусор</h3>
+                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(в мешках)</p>
+                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
+                        <li>Битая плитка</li>
+                        <li>Штукатурка и бетон</li>
+                        <li>Кирпичи</li>
+                        <li>Старые обои после ремонта</li>
+                    </ul>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border: 2px solid #FCD34D; border-radius: 1rem; padding: 2rem; box-shadow: 0 4px 8px rgba(252,211,77,0.2);">
+                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🪑 Старая мебель (Хлам)</h3>
+                    <p style="margin: 0 0 0.5rem 0; color: #92400E; font-size: 0.9rem; font-style: italic;">(перед продажей квартиры)</p>
+                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
+                        <li>Советские стенки</li>
+                        <li>Диваны и кресла</li>
+                        <li>Шкафы</li>
+                        <li>Кухонные гарнитуры</li>
+                    </ul>
+                </div>
+
+                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
+                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">📺 Бытовая техника</h3>
+                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(тяжелое)</p>
+                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
+                        <li>Старые холодильники</li>
+                        <li>Стиральные машины</li>
+                        <li>Чугунные ванны</li>
+                        <li>Батареи отопления</li>
+                    </ul>
+                </div>
+
+                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
+                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🚪 Рамы и двери</h3>
+                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(после замены)</p>
+                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
+                        <li>Оконные рамы</li>
+                        <li>Старые двери</li>
+                        <li>Деревянные коробки</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); padding: 2.5rem; border-radius: 1rem; margin-bottom: 3rem; border: 2px solid #3B82F6;">
+                <h2 style="margin: 0 0 1.5rem 0; color: #000; font-size: 1.8rem;">📋 Как подготовиться к вывозу</h2>
+                
+                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 1rem;">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #1E40AF; font-size: 1.2rem;">💼 Сыпучий мусор</h3>
+                    <p style="margin: 0; color: #374151; line-height: 1.7;">
+                        <strong>Важно!</strong> Мелкий мусор должен быть упакован в <strong>прочные строительные мешки</strong> (зеленые/белые полипропиленовые). Мы не можем выносить мусор лопатами из квартиры.
+                    </p>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem;">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #1E40AF; font-size: 1.2rem;">🪚 Крупногабаритная мебель</h3>
+                    <p style="margin: 0; color: #374151; line-height: 1.7;">
+                        Если мебель не влезает в лифт или дверной проем — <strong>мы разберем ее на месте</strong>. Приедем с инструментами.
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">🚛 Наш транспорт и грузчики</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚐</div>
+                    <h3 style="color: #000; margin: 0 0 1rem 0; font-size: 1.3rem;">Малый объем</h3>
+                    <p style="margin: 0 0 1rem 0; color: #6B7280; font-style: italic; font-size: 0.9rem;">10-20 мешков</p>
+                    <p style="margin: 0; color: #374151; line-height: 1.7; font-size: 0.95rem;">
+                        Микроавтобус / Ford Transit для небольшого ремонта или вывоза одной старой мебели.
+                    </p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%); border: 2px solid #6B7280; border-radius: 1rem; padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚛</div>
+                    <h3 style="color: #000; margin: 0 0 1rem 0; font-size: 1.3rem;">Ремонт "под ключ"</h3>
+                    <p style="margin: 0 0 1rem 0; color: #6B7280; font-style: italic; font-size: 0.9rem;">Тонны мусора</p>
+                    <p style="margin: 0; color: #374151; line-height: 1.7; font-size: 0.95rem;">
+                        Самосвал (ЗИЛ/КамАЗ) или большой грузовик для капитального ремонта.
+                    </p>
+                </div>
+            </div>
+
+            <div style="background: #FFFBEB; padding: 2rem; border-radius: 1rem; border-left: 4px solid #F59E0B; margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin: 0 0 1rem 0; color: #000;">💪 Грузчики</h3>
+                <p style="margin: 0; color: #78350F; line-height: 1.7;">
+                    Крепкие ребята, которые <strong>спустят тяжелые мешки с любого этажа</strong> (даже без лифта). Это тяжелая физическая работа — оплачивается отдельно.
+                </p>
+            </div>
+
+            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">❓ Вопросы об утилизации</h2>
+
+            <div style="max-width: 900px; margin: 0 auto 3rem auto;">
+                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Нужно ли мне нанимать машину, если у меня всего один старый диван?</h3>
+                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
+                        <strong>Ответ:</strong> Да, мы приедем и заберем его. Это услуга "Вывоз старой мебели" — подходит для освобождения квартиры перед продажей.
+                    </p>
+                </div>
+
+                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Вы предоставляете мешки?</h3>
+                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
+                        <strong>Ответ:</strong> Можем привезти свои прочные полипропиленовые мешки за дополнительную плату, если у вас их нет.
+                    </p>
+                </div>
+
+                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Куда вы это везете?</h3>
+                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
+                        <strong>Ответ:</strong> На <strong>официальный городской полигон ТБО</strong>, а не в ближайший овраг. Это легально и безопасно для окружающей среды.
+                    </p>
+                </div>
+            </div>
+        `,
+    },
+
     batumi_trash: {
         title: "Вывоз строительного мусора в Батуми: грузчики, полигон, уборка",
         price: "от 80 ₾",

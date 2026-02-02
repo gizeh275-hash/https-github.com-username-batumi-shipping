@@ -47,10 +47,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         notFound();
     }
 
-    // Redirect /service/trash to /trash
-    if (slug === 'trash') {
-        redirect('/trash');
-    }
+
 
     // Determine base service (e.g., "trash" from "batumi_trash")
     let baseServiceSlug = slug;

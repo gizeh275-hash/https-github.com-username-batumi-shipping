@@ -67,7 +67,7 @@ export default function Header() {
 
                                             {/* Right Column */}
                                             <div className="space-y-4">
-                                                <Link href="/trash" className="block hover:bg-white/10 p-3 rounded-lg transition group/item">
+                                                <Link href="/service/trash" className="block hover:bg-white/10 p-3 rounded-lg transition group/item">
                                                     <h4 className="font-bold text-sm mb-1 group-hover/item:text-primary-400">Вывоз мусора</h4>
                                                     <p className="text-xs text-gray-400">Вывоз строительного мусора и ненужных вещей</p>
                                                 </Link>
