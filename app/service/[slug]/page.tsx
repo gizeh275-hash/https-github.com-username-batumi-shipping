@@ -116,7 +116,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
                 {/* City Selection Section - Show for all services except ... */}
                 {slug !== 'batumi_moving' && slug !== 'tbilisi_moving' && slug !== 'batumi_movers' && slug !== 'tbilisi_movers' && slug !== 'batumi_taxi' && slug !== 'tbilisi_taxi' && slug !== 'batumi_trash' && slug !== 'tbilisi_trash' && slug !== 'tbilisi_office' && slug !== 'batumi_office' && slug !== 'intercity' && (
-                    <div className={slug === 'moving' ? 'hidden md:block' : ''}>
+                    <div className="">
                         <CitiesScroll cityOverrides={cityOverrides} />
                     </div>
                 )}

@@ -715,13 +715,7 @@
                     </a>
                 </div>
 
-                <!-- 2. CITIES BLOCK -->
-                <div class="glass-strong p-5 rounded-xl border border-yellow-400/30">
-                    <p class="text-gray-800 leading-relaxed font-medium text-center">
-                        📍 <span class="font-bold">Основные города:</span> Тбилиси, Батуми, Кутаиси.<br/>
-                        🚚 <span class="font-bold">Регионы:</span> Кахетия, Гудаури, Сванетия и все поселки Аджарии.
-                    </p>
-                </div>
+                <!-- 2. CITIES BLOCK REMOVED (Replaced by CitiesScroll component) -->
 
                 <!-- 3. COMPARISON BLOCK -->
                 <div>
