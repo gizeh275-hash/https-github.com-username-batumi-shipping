@@ -1020,7 +1020,7 @@
         badge: "Батуми",
         desc_short: "Официальный вывоз мусора в Батуми на полигон Адлия. Строительный мусор, старая мебель, хлам. Без штрафов. Грузчики убирают за собой.",
         content: `
-            <div class="bg-gradient-to-br from-red-100 to-red-200 p-10 rounded-2xl mb-12 border-l-4 border-red-600 shadow-sm">
+            <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 md:p-10 rounded-2xl mb-12 border-l-4 border-red-600 shadow-sm">
                 <h2 class="mb-4 text-red-900 font-bold text-xl">🏗️ Вывоз мусора в Батуми без головной боли</h2>
                 <p class="m-0 text-red-900 leading-relaxed text-lg">Ремонт — это радость, а гора мешков — проблема. Мы заберем строительный мусор, старый диван или хлам из гаража и отвезем на официальный полигон. Никаких штрафов от инспекции!</p>
             </div>
@@ -1086,7 +1086,7 @@
             </div>
 
             <!-- Block 4: Features / Safety -->
-            <div class="bg-gradient-to-br from-red-50 to-red-100 p-10 rounded-3xl mb-12">
+            <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 md:p-10 rounded-3xl mb-12">
                 <h2 class="text-center text-4xl mb-8 text-red-800 font-bold">🚫 Почему нельзя выбрасывать в обычный бак?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white/80 p-6 rounded-2xl border-t-4 border-red-600">
@@ -1197,7 +1197,7 @@
         badge: null,
         desc_short: "Работаем по всей Грузии: Батуми, Тбилиси, Кутаиси. Профессиональные грузчики с инструментами для погрузки, разгрузки и такелажных работ.",
         content: `
-            <div class="bg-gradient-to-br from-red-100 to-red-200 p-10 rounded-2xl mb-12 border-l-4 border-red-500">
+            <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 md:p-10 rounded-2xl mb-12 border-l-4 border-red-500">
                 <h2 class="mb-6 text-black font-bold text-3xl">💪 Ваша спина стоит дороже</h2>
                 <p class="mb-4 text-lg leading-relaxed text-red-900">
                     <strong>Не пытайтесь поднять диван в одиночку или с соседом.</strong> Лечение спины обойдется дороже, чем вызов профессиональных грузчиков.
@@ -1264,7 +1264,7 @@
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-10 rounded-2xl mb-12 text-white">
+            <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-6 md:p-10 rounded-2xl mb-12 text-white">
                 <h2 class="mb-6 text-amber-300 font-bold text-3xl">⚙️ Такелажные работы (Тяжелые грузы)</h2>
                 <p class="mb-6 leading-relaxed text-lg">
                     Обычный грузчик <strong>не поднимет</strong> пианино или сейф. Для таких задач нужна специальная подготовка.

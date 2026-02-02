@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ru" className={inter.variable}>
-            <body>
+            <body className="overflow-x-hidden">
                 {children}
                 <FloatingContactWidget />
                 <ScrollToTop />
