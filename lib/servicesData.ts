@@ -1687,7 +1687,7 @@
                                 <p class="text-sm text-gray-500">Под ключ</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 55 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 55 ₾</span>
                                 <span class="text-xs text-gray-500">за место</span>
                             </div>
                         </div>
@@ -1701,7 +1701,7 @@
                                 <p class="text-sm text-gray-500">VIP упаковка</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 150 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 150 ₾</span>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm">Особо бережная упаковка кожаной мебели и техники.</p>
@@ -1727,7 +1727,7 @@
                                 <p class="text-sm text-gray-500">Высокий кузов</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 50 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 50 ₾</span>
                                 <span class="text-xs text-gray-500">в час</span>
                             </div>
                         </div>
@@ -1887,7 +1887,8 @@
 
             <!-- Block 7: CTA -->
             <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-12 rounded-3xl text-center shadow-xl">
-                <h2 class="text-amber-300 mb-4 text-3xl font-bold">💼 Не останавливайте бизнес из-за переезда</h2>
+                <div class="text-5xl mb-4">💼</div>
+                <h2 class="text-amber-300 mb-4 text-3xl font-bold px-4 leading-tight">Не останавливайте бизнес из-за переезда</h2>
                 <p class="text-gray-200 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Доверьте логистику профессионалам. Получите расчет стоимости и план переезда уже сегодня.
                 </p>
@@ -2368,7 +2369,7 @@
                                 <p class="text-sm text-gray-500">Под ключ</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 60 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 60 ₾</span>
                                 <span class="text-xs text-gray-500">за место</span>
                             </div>
                         </div>
@@ -2382,7 +2383,7 @@
                                 <p class="text-sm text-gray-500">VIP упаковка</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 200 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 200 ₾</span>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm">Особо бережная упаковка кожаной мебели и техники.</p>
@@ -2395,7 +2396,7 @@
                                 <p class="text-sm text-gray-500">Такелаж, ремни</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 50 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 50 ₾</span>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm">Профессиональная работа с офисной мебелью.</p>
@@ -2408,7 +2409,7 @@
                                 <p class="text-sm text-gray-500">Высокий кузов</p>
                             </div>
                             <div class="text-right">
-                                <span class="block text-xl md:text-2xl font-bold text-emerald-600">от 60 ₾</span>
+                                <span class="block text-xl md:text-2xl font-bold text-emerald-600 whitespace-nowrap">от 60 ₾</span>
                                 <span class="text-xs text-gray-500">в час</span>
                             </div>
                         </div>
@@ -2569,7 +2570,8 @@
 
             <!-- Block 7: CTA -->
             <div class="bg-gradient-to-br from-blue-800 to-blue-900 p-12 rounded-3xl text-center shadow-xl">
-                <h2 class="text-amber-100 mb-4 text-3xl font-bold">💼 Не останавливайте бизнес из-за переезда</h2>
+                <div class="text-5xl mb-4">💼</div>
+                <h2 class="text-amber-100 mb-4 text-3xl font-bold px-4 leading-tight">Не останавливайте бизнес из-за переезда</h2>
                 <p class="text-blue-100 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Доверьте логистику профессионалам. Получите расчет стоимости и план переезда уже сегодня.
                 </p>
