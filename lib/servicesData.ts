@@ -1888,7 +1888,7 @@
             <!-- Block 7: CTA -->
             <div class="bg-gradient-to-br from-gray-800 to-gray-700 p-12 rounded-3xl text-center shadow-xl">
                 <div class="text-5xl mb-4">💼</div>
-                <h2 class="text-amber-300 mb-4 text-3xl font-bold px-4 leading-tight">Не останавливайте бизнес из-за переезда</h2>
+                <h2 class="text-amber-300 mb-4 text-2xl md:text-3xl font-bold px-2 leading-tight">Не останавливайте бизнес из-за переезда</h2>
                 <p class="text-gray-200 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Доверьте логистику профессионалам. Получите расчет стоимости и план переезда уже сегодня.
                 </p>
@@ -2571,7 +2571,7 @@
             <!-- Block 7: CTA -->
             <div class="bg-gradient-to-br from-blue-800 to-blue-900 p-12 rounded-3xl text-center shadow-xl">
                 <div class="text-5xl mb-4">💼</div>
-                <h2 class="text-amber-100 mb-4 text-3xl font-bold px-4 leading-tight">Не останавливайте бизнес из-за переезда</h2>
+                <h2 class="text-amber-100 mb-4 text-2xl md:text-3xl font-bold px-2 leading-tight">Не останавливайте бизнес из-за переезда</h2>
                 <p class="text-blue-100 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Доверьте логистику профессионалам. Получите расчет стоимости и план переезда уже сегодня.
                 </p>
