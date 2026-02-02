@@ -16,7 +16,7 @@ export default function FloatingContactWidget() {
         },
         {
             name: 'Telegram',
-            url: 'https://t.me/PereezdBatumiBot',
+            url: 'https://t.me/pereezdBatumiGE',
             icon: '✈️',
             bgColor: 'bg-blue-500 hover:bg-blue-600',
             delay: 0.05,

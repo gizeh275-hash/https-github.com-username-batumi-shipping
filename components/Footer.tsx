@@ -12,9 +12,9 @@ export default function Footer() {
                     <div className="text-center">
                         <h3 className="text-xl font-bold mb-4 gradient-text text-center">Контакты</h3>
                         <div className="space-y-3 flex flex-col items-center">
-                            <a href="https://t.me/PereezdBatumiBot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-400 transition">
+                            <a href="https://t.me/pereezdBatumiGE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-400 transition">
                                 <Send className="w-5 h-5" />
-                                <span>@PereezdBatumiBot</span>
+                                <span>@pereezdBatumiGE</span>
                             </a>
                             <a href="tel:+995597048630" className="flex items-center gap-2 hover:text-primary-400 transition">
                                 <Phone className="w-5 h-5" />

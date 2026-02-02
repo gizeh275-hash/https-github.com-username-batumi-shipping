@@ -13,7 +13,7 @@ export default function Header() {
 
     const t = translations[lang];
 
-    const BOT_URL = 'https://t.me/PereezdBatumiBot';
+    const BOT_URL = 'https://t.me/pereezdBatumiGE';
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 glass-strong">

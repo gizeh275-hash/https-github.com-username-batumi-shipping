@@ -64,7 +64,7 @@ export default function Home() {
 
                                     <div className="flex flex-col gap-3">
                                         <a
-                                            href="https://t.me/PereezdBatumiBot"
+                                            href="https://t.me/pereezdBatumiGE"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="w-full lg:w-auto inline-flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-lg px-8 py-4 rounded-2xl transition-all shadow-lg active:scale-95"
