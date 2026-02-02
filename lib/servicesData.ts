@@ -705,15 +705,7 @@
             <!-- MOBILE CONTENT (VISIBLE ON MOBILE) -->
             <div class="md:hidden space-y-8">
                 
-                <!-- 0. HERO MOBILE (Custom) -->
-                <div class="text-center py-6">
-                    <h1 class="text-3xl font-bold mb-3 leading-tight">Квартирный переезд в Грузии: <br/>Бережно, как для себя</h1>
-                    <p class="text-lg text-gray-600 mb-6">Разберем, упакуем и соберем вашу мебель.</p>
-                    <div class="text-4xl font-bold text-yellow-600 mb-6">от 60 ₾</div>
-                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="inline-block w-full gradient-bg px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
-                        Рассчитать в Telegram
-                    </a>
-                </div>
+                <!-- 0. HERO MOBILE REMOVED (Replaced by Standard Hero) -->
 
                 <!-- 2. CITIES BLOCK REMOVED (Replaced by CitiesScroll component) -->
 
