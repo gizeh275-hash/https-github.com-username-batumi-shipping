@@ -31,16 +31,19 @@ export default function KutaisiPage() {
 
                 {/* About Kutaisi Services */}
                 <section className="container mx-auto px-4 py-10 md:py-20">
-                    <div className="glass-strong p-6 md:p-10 rounded-2xl max-w-4xl mx-auto">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-6">Грузоперевозки в Кутаиси и Имерети</h2>
-                        <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
-                            Предоставляем полный спектр услуг по грузоперевозкам в Кутаиси.
-                            Второй по величине город Грузии - важный транспортный узел между Тбилиси и Батуми.
-                        </p>
-                        <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                            Наши автомобили оснащены всем необходимым для безопасной транспортировки мебели и грузов любого размера.
-                            Опытные грузчики аккуратно упакуют и перевезут ваши вещи.
-                        </p>
+                    <div className="relative border-2 border-gray-100 rounded-2xl max-w-4xl mx-auto shadow-lg overflow-hidden bg-white">
+                        {/* Content */}
+                        <div className="relative z-10 p-6 md:p-10">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-black break-words">Грузоперевозки в Кутаиси</h2>
+                            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-3 md:mb-4 break-words">
+                                Полный спектр услуг в Кутаиси и Имерети.
+                                Второй по величине город Грузии - важный транспортный узел.
+                            </p>
+                            <p className="text-gray-600 text-base md:text-lg leading-relaxed break-words">
+                                Машины оснащены всем необходимым для перевозки мебели и грузов.
+                                Грузчики упакуют и перевезут ваши вещи.
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -103,15 +106,15 @@ export default function KutaisiPage() {
                 </section>
 
                 {/* Coverage Area */}
-                <section className="container mx-auto px-4 py-20">
-                    <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-                        <span className="gradient-text">Районы обслуживания</span>
+                <section className="container mx-auto px-4 py-20 bg-white">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-black">
+                        Районы обслуживания
                     </h2>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                        {['Кутаиси центр', 'Зестафони', 'Самтредиа', 'Хашури', 'Ткибули', 'Чиатура', 'Сачхере', 'Багдади'].map((area, i) => (
-                            <div key={i} className="glass p-4 rounded-lg text-center hover:bg-white/10 transition">
-                                {area}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-center">
+                        {['Кутаиси', 'Зестафони', 'Самтредиа', 'Хашури', 'Ткибули', 'Чиатура', 'Сачхере', 'Багдади'].map((area, i) => (
+                            <div key={i} className="p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-yellow-400 transition-colors cursor-default">
+                                <span className="font-medium text-gray-800 text-sm md:text-base break-words">{area}</span>
                             </div>
                         ))}
                     </div>

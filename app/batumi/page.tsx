@@ -20,7 +20,7 @@ export default function BatumiPage() {
             <Header />
             <main className="bg-gradient-to-br from-yellow-50 to-white">
                 <Hero
-                    title="Грузоперевозки в Батуми: от Старого города до Махинджаури"
+                    title="Грузоперевозки в Батуми"
                     subtitle="Знаем специфику города: узкие улочки, пробки, высотки Orbi. Работаем в любую погоду!"
                     ctaText="Заказать в Telegram"
                     ctaLink="https://t.me/PereezdBatumiBot"
@@ -44,16 +44,16 @@ export default function BatumiPage() {
                         </div>
 
                         {/* Content */}
-                        <div className="relative z-10 p-10">
-                            <h2 className="text-3xl font-bold mb-6 text-black">Почему мы — местные эксперты?</h2>
-                            <p className="text-black text-lg leading-relaxed mb-4 font-medium">
-                                Осуществляем грузоперевозки по Батуми и всей Аджарии. Мы не просто возим грузы, мы знаем каждую яму на дороге и каждый «хитрый» поворот.
+                        <div className="relative z-10 p-6 md:p-10">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-black break-words">Почему мы — местные эксперты?</h2>
+                            <p className="text-black text-base md:text-lg leading-relaxed mb-3 md:mb-4 font-medium break-words">
+                                Грузоперевозки по Батуми и Аджарии. Мы знаем каждый поворот.
                             </p>
-                            <p className="text-black text-lg leading-relaxed mb-4 font-medium">
-                                Как проехать по узким брусчатым улочкам Старого Батуми, где припарковаться для разгрузки у башен <strong>Orbi City</strong> (Twin Towers), и как доставить стройматериалы в частный сектор на Бони.
+                            <p className="text-black text-base md:text-lg leading-relaxed mb-3 md:mb-4 font-medium break-words">
+                                Проезд по узким улицам Старого Батуми, парковка у Orbi City, доставка материалов на Бони.
                             </p>
-                            <p className="text-blue-700 text-lg font-bold leading-relaxed">
-                                🌦️ Работаем в любую погоду — наши машины герметичны, что критически важно в знаменитый батумский сезон дождей.
+                            <p className="text-blue-700 text-base md:text-lg font-bold leading-relaxed break-words">
+                                🌧️ Работаем в любую погоду — машины герметичны.
                             </p>
                         </div>
                     </div>
@@ -260,8 +260,8 @@ export default function BatumiPage() {
                                     </thead>
                                     <tbody className="bg-white">
                                         <tr className="border-b border-gray-200 hover:bg-gray-50 transition">
-                                            <td className="px-6 py-4 text-black font-semibold border-r border-gray-200">
-                                                Центр — Центр (Чавчавадзе/Горгиладзе)
+                                            <td className="px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-black font-semibold border-r border-gray-200 break-words">
+                                                Центр (Чавчавадзе)
                                             </td>
                                             <td className="px-6 py-4 text-gray-700">
                                                 ~40-50 ₾
@@ -284,8 +284,8 @@ export default function BatumiPage() {
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-gray-50 transition">
-                                            <td className="px-6 py-4 text-black font-semibold border-r border-gray-200">
-                                                Батуми — Гонио/Квариати
+                                            <td className="px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-black font-semibold border-r border-gray-200 break-words">
+                                                Батуми — Гонио
                                             </td>
                                             <td className="px-6 py-4 text-gray-700">
                                                 ~70-80 ₾

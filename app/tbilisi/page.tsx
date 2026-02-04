@@ -21,8 +21,8 @@ export default function TbilisiPage() {
             <Header />
             <main className="bg-gradient-to-br from-yellow-50 to-white">
                 <Hero
-                    title="Грузоперевозки в Тбилиси: от Глдани до Мтацминды"
-                    subtitle="Быстрая подача машины во все районы столицы. Пропуск в центр, работаем 24/7."
+                    title="Грузоперевозки в Тбилиси"
+                    subtitle="Быстрая подача во все районы столицы. Пропуск в центр, работаем 24/7."
                     ctaText="Заказать в Telegram"
                     ctaLink="https://t.me/PereezdBatumiBot"
                     showBackground={false}
@@ -45,18 +45,18 @@ export default function TbilisiPage() {
                         </div>
 
                         {/* Content */}
-                        <div className="relative z-10 p-10">
-                            <h2 className="text-3xl font-bold mb-6 text-black">Эксперты по Тбилиси</h2>
-                            <p className="text-black text-lg leading-relaxed mb-4 font-medium">
-                                Мы знаем специфику тбилисского трафика и рельефа.
-                                Как объехать пробки на набережной, где припарковаться на узких улицах Сололаки,
-                                и какая машина поднимется на крутые подъемы Мтацминды.
+                        <div className="relative z-10 p-6 md:p-10">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-black break-words">Эксперты по Тбилиси</h2>
+                            <p className="text-black text-base md:text-lg leading-relaxed mb-3 md:mb-4 font-medium break-words">
+                                Мы знаем специфику трафика и рельефа столицы.
+                                Как объехать пробки, где парковка в Сололаки,
+                                и какая машина поднимется на подъемы Мтацминды.
                             </p>
-                            <p className="text-black text-lg leading-relaxed mb-4 font-medium">
+                            <p className="text-black text-base md:text-lg leading-relaxed mb-3 md:mb-4 font-medium break-words">
                                 Работаем во всех районах: <strong>Сабуртало, Ваке, Дидубе, Исани</strong> и других.
                             </p>
-                            <p className="text-blue-700 text-lg font-bold leading-relaxed">
-                                🏙️ Есть пропуска для въезда грузового транспорта в исторический центр.
+                            <p className="text-blue-700 text-base md:text-lg font-bold leading-relaxed break-words">
+                                🏙️ Есть пропуск для въезда в центр.
                             </p>
                         </div>
                     </div>
@@ -86,13 +86,13 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-black mb-4">Квартирный переезд</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
-                                            Организуем переезд «под ключ» в любой район Тбилиси. Упаковка, разборка мебели, грузчики.
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Квартирный переезд</h3>
+                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                            Переезд под ключ в любой район. Упаковка, разборка мебели, грузчики.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
-                                            Аккуратно перевезем вещи даже по сложным серпантинам в Цхнети или Коджори.
+                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                            Перевезем даже по серпантинам в Цхнети или Коджори.
                                         </p>
                                         <Link href="/service/tbilisi_moving" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
@@ -110,10 +110,10 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-black mb-4">Офисный переезд</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-6">
-                                            Перевозка офисов в бизнес-центры Тбилиси. Работаем по безналу, предоставляем документы. Возможен ночной переезд.
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Офисный переезд</h3>
+                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
+                                            Переезд офисов в бизнес-центры. Работаем по безналу, документы на руки. Возможен ночной переезд.
                                         </p>
                                         <Link href="/service/tbilisi_office" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
@@ -134,10 +134,10 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-white mb-4">Услуги грузчиков</h3>
-                                        <p className="text-blue-50 leading-relaxed mb-6">
-                                            Крепкие ребята для любых задач: подъем стройматериалов без лифта, разгрузка фур, перестановка мебели.
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 break-words">Услуги грузчиков</h3>
+                                        <p className="text-sm md:text-base text-blue-50 leading-relaxed mb-4 md:mb-6 break-words">
+                                            Крепкие ребята: подъем без лифта, разгрузка фур, перестановка мебели.
                                         </p>
                                         <Link href="/service/tbilisi_movers" className="mt-auto inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
@@ -155,10 +155,10 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-black mb-4">Вывоз мусора</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-6">
-                                            Вывоз строительного мусора и старой мебели на полигон. Строго соблюдаем законы Тбилиси об утилизации.
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Вывоз мусора</h3>
+                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
+                                            Вывоз мусора и мебели на полигон. Соблюдаем законы об утилизации.
                                         </p>
                                         <Link href="/service/tbilisi_trash" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
@@ -176,13 +176,13 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-black mb-4">Грузовое такси</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
-                                            Срочная подача машины в Тбилиси (30-60 мин).
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Грузовое такси</h3>
+                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                            Подача машины за 30-60 мин.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
-                                            Доставка из строительных магазинов (Domino, Gorgia, Modus) и перевозка вещей.
+                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                            Доставка из магазинов (Domino, Gorgia, Modus).
                                         </p>
                                         <Link href="/service/tbilisi_taxi" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
@@ -200,13 +200,13 @@ export default function TbilisiPage() {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-                                    <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-black mb-4">Междугородние рейсы</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
-                                            Регулярные рейсы <strong>Тбилиси — Батуми</strong>. Попутные грузы и отдельные машины.
+                                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Междугородние рейсы</h3>
+                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                            Рейсы <strong>Тбилиси — Батуми</strong>. Попутные грузы и отдельные машины.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
-                                            Заберем груз из любой точки Тбилиси и доставим в любой регион Грузии.
+                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                            Заберем груз из любой точки и доставим по Грузии.
                                         </p>
                                         <Link href="/service/intercity" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
                                             Подробнее <ArrowRight className="w-5 h-5" />
