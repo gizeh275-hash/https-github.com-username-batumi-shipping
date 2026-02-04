@@ -8,8 +8,30 @@ interface TranslatedContentProps {
     cacheKey: string;
 }
 
-// Функция для извлечения текстового контента из HTML
-function extractTextFromHTML(html: string): string[] {
+// Простая функция для перевода через бесплатный Google Translate API
+async function translateText(text: string, targetLang: string): Promise<string> {
+    try {
+        const encodedText = encodeURIComponent(text);
+        const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=ru&tl=${targetLang}&dt=t&q=${encodedText}`;
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data && data[0] && data[0][0] && data[0][0][0]) {
+            return data[0][0][0];
+        }
+
+        return text;
+    } catch (error) {
+        console.error('Translation error:', error);
+        return text;
+    }
+}
+
+// Извлечение текстаиз HTML
+function extractTexts(html: string): string[] {
+    if (typeof window === 'undefined') return [];
+
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = html;
 
@@ -17,7 +39,9 @@ function extractTextFromHTML(html: string): string[] {
     const walk = (node: Node) => {
         if (node.nodeType === Node.TEXT_NODE) {
             const text = node.textContent?.trim();
-            if (text && text.length > 2) texts.push(text);
+            if (text && text.length > 2) {
+                texts.push(text);
+            }
         } else {
             node.childNodes.forEach(walk);
         }
@@ -27,16 +51,6 @@ function extractTextFromHTML(html: string): string[] {
     return texts;
 }
 
-// Функция для замены текста в HTML
-function replaceTextInHTML(html: string, translations: Map<string, string>): string {
-    let result = html;
-    translations.forEach((translated, original) => {
-        const escaped = original.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        result = result.replace(new RegExp(escaped, 'g'), translated);
-    });
-    return result;
-}
-
 export default function TranslatedContent({ htmlContent, cacheKey }: TranslatedContentProps) {
     const { language } = useLanguage();
     const [translatedHtml, setTranslatedHtml] = useState(htmlContent);
@@ -44,46 +58,50 @@ export default function TranslatedContent({ htmlContent, cacheKey }: TranslatedC
 
     useEffect(() => {
         async function translate() {
+            console.log('[Translation] Language:', language);
+
             if (language === 'ru') {
                 setTranslatedHtml(htmlContent);
                 return;
             }
 
-            const cacheKeyFull = `translation_${cacheKey}_${language}`;
+            const cacheKeyFull = `translation_${cacheKey}_${language}`; // Renamed to avoid conflict with prop
             const cached = localStorage.getItem(cacheKeyFull);
 
             if (cached) {
+                console.log('[Translation] Loaded from cache');
                 setTranslatedHtml(cached);
                 return;
             }
 
+            console.log('[Translation] Starting translation...');
             setIsTranslating(true);
 
             try {
-                const texts = extractTextFromHTML(htmlContent);
-                const translations = new Map<string, string>();
+                const texts = extractTexts(htmlContent);
+                console.log(`[Translation] Found ${texts.length} texts to translate`);
 
-                for (const text of texts) {
-                    const response = await fetch('/api/translate', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ text, targetLang: language }),
-                    });
+                let result = htmlContent;
 
-                    const data = await response.json();
-                    if (data.translatedText) {
-                        translations.set(text, data.translatedText);
+                // Переводим небольшими порциями
+                for (let i = 0; i < Math.min(texts.length, 50); i++) {
+                    const original = texts[i];
+                    const translated = await translateText(original, language);
+
+                    if (translated !== original) {
+                        const escaped = original.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        result = result.replace(new RegExp(escaped, 'g'), translated);
                     }
 
-                    await new Promise(resolve => setTimeout(resolve, 100));
+                    // Задержка чтобы не заблокировали
+                    await new Promise(resolve => setTimeout(resolve, 200));
                 }
 
-                const translatedHtml = replaceTextInHTML(htmlContent, translations);
-
-                localStorage.setItem(cacheKeyFull, translatedHtml);
-                setTranslatedHtml(translatedHtml);
+                console.log('[Translation] Complete!');
+                localStorage.setItem(cacheKeyFull, result);
+                setTranslatedHtml(result);
             } catch (error) {
-                console.error('Translation failed:', error);
+                console.error('[Translation] Failed:', error);
                 setTranslatedHtml(htmlContent);
             } finally {
                 setIsTranslating(false);
@@ -98,7 +116,7 @@ export default function TranslatedContent({ htmlContent, cacheKey }: TranslatedC
             <div className="text-center py-12">
                 <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400"></div>
                 <p className="mt-4 text-gray-600">
-                    {language === 'en' ? 'Translating...' : language === 'ka' ? 'თარგმნა...' : 'Перевод...'}
+                    {language === 'en' ? 'Translating page, please wait...' : language === 'ka' ? 'გვერდის თარგმნა...' : 'Перевод страницы...'}
                 </p>
             </div>
         );
