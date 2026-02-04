@@ -122,7 +122,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <section className="container mx-auto px-4 pt-8 pb-20">
                     <div className="max-w-4xl mx-auto">
                         <div
-                            className="glass-strong p-5 md:p-10 rounded-2xl prose prose-lg max-w-none"
+                            className="glass-strong p-5 md:p-10 rounded-2xl prose prose-lg max-w-none w-full overflow-x-hidden"
                             dangerouslySetInnerHTML={{ __html: service.content }}
                             style={{
                                 color: '#374151',

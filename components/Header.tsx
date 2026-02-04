@@ -1,5 +1,8 @@
 'use client';
 
+import Image from 'next/image';
+
+// ... imports remain the same, just adding Image to the top ...
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Truck, Globe, ChevronDown, ArrowRight, Phone } from 'lucide-react';
@@ -22,9 +25,16 @@ export default function Header() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="flex items-center gap-2 text-xl font-bold cursor-pointer"
+                        className="flex items-center gap-2 cursor-pointer"
                     >
-                        <span className="gradient-text text-2xl">PereezdGe.com</span>
+                        <Image
+                            src="/logo.png"
+                            alt="PereezdGe Logo"
+                            width={200}
+                            height={60}
+                            className="h-10 w-auto md:h-14 object-contain"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -206,7 +216,7 @@ export default function Header() {
                                     <Link href="/service/moving" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Квартирный переезд</Link>
                                     <Link href="/service/office" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Офисный переезд</Link>
                                     <Link href="/service/movers" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Услуги грузчиков</Link>
-                                    <Link href="/trash" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Вывоз мусора</Link>
+                                    <Link href="/service/trash" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Вывоз мусора</Link>
                                     <Link href="/service/taxi" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Грузовое такси</Link>
                                     <Link href="/service/intercity" onClick={() => setIsOpen(false)} className="block text-sm text-gray-400 hover:text-white">Междугородние рейсы</Link>
                                 </div>

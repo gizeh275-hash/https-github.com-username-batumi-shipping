@@ -34,7 +34,7 @@ export default function Footer() {
                         <div className="space-y-2 flex flex-col items-center">
                             <Link href="/service/moving" className="block hover:text-primary-400 transition">Квартирный переезд</Link>
                             <Link href="/service/movers" className="block hover:text-primary-400 transition">Услуги грузчиков</Link>
-                            <Link href="/trash" className="block hover:text-primary-400 transition">Вывоз мусора</Link>
+                            <Link href="/service/trash" className="block hover:text-primary-400 transition">Вывоз мусора</Link>
                             <Link href="/tbilisi" className="block hover:text-primary-400 transition">Тбилиси</Link>
                             <Link href="/batumi" className="block hover:text-primary-400 transition">Батуми</Link>
                         </div>

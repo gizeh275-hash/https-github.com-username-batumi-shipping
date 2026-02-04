@@ -9,7 +9,13 @@ const nextConfig = {
         ],
     },
     async redirects() {
-        return [];
+        return [
+            {
+                source: '/trash',
+                destination: '/service/trash',
+                permanent: true,
+            },
+        ];
     },
 };
 

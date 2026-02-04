@@ -61,89 +61,89 @@
         badge: "Батуми",
         desc_short: "Грузовое такси по Батуми и Аджарии. Перевезем покупки из магазинов, мебель, технику. Подача за 20-30 минут. Можете ехать с грузом в кабине.",
         content: `
-            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-8 rounded-2xl mb-8 border-l-4 border-amber-500">
-                <h2 class="mb-4 text-black font-bold text-2xl">⚡ Когда вам нужно грузовое такси, а не переезд?</h2>
-                <p class="m-0 text-gray-700 leading-relaxed">Не хотите заказывать полноценный переезд из-за пары коробок? Грузовое такси — это дешевле, быстрее и проще!</p>
+            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-6 md:p-8 rounded-2xl mb-8 border-l-4 border-amber-500">
+                <h2 class="mb-4 text-black font-bold text-xl md:text-2xl">⚡ Когда вам нужно грузовое такси, а не переезд?</h2>
+                <p class="m-0 text-gray-700 leading-relaxed text-sm md:text-base">Не хотите заказывать полноценный переезд из-за пары коробок? Грузовое такси — это дешевле, быстрее и проще!</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">💰 Фиксированные цены на перевозку</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-                    <table class="w-full border-collapse">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">💰 Фиксированные цены на перевозку</h2>
+                <div class="bg-white rounded-2xl overflow-x-auto shadow-lg">
+                    <table class="w-full border-collapse min-w-[600px]">
                         <thead>
                             <tr class="bg-gradient-to-br from-amber-500 to-amber-600 text-white">
-                                <th class="p-4 text-left text-lg">Тип авто</th>
-                                <th class="p-4 text-left text-lg">Стоимость</th>
-                                <th class="p-4 text-left text-lg">Для чего подходит</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Тип авто</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Стоимость</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Для чего подходит</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Мини-фургон (Caddy)</td>
-                                <td class="p-5 text-amber-500 font-bold text-lg">от 30 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Стиральная машина, 10 мешков смесей, личные вещи, покупки из супермаркета.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Мини-фургон (Caddy)</td>
+                                <td class="p-3 md:p-5 text-amber-500 font-bold text-base md:text-lg whitespace-nowrap">от 30 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Стиральная машина, 10 мешков смесей, личные вещи, покупки из супермаркета.</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Микроавтобус (Transit)</td>
-                                <td class="p-5 text-amber-500 font-bold text-lg">от 45 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Диван, холодильник, кровать, мебель для одной комнаты.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Микроавтобус (Transit)</td>
+                                <td class="p-3 md:p-5 text-amber-500 font-bold text-base md:text-lg whitespace-nowrap">от 45 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Диван, холодильник, кровать, мебель для одной комнаты.</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Бортовая / Самосвал</td>
-                                <td class="p-5 text-amber-500 font-bold text-lg">от 60 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Арматура, трубы, доски, сыпучие материалы (песок/щебень).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Бортовая / Самосвал</td>
+                                <td class="p-3 md:p-5 text-amber-500 font-bold text-base md:text-lg whitespace-nowrap">от 60 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Арматура, трубы, доски, сыпучие материалы (песок/щебень).</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Помощь водителя</td>
-                                <td class="p-5 text-green-500 font-bold text-lg">+10-20 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Если нужно помочь подать вещи из кузова (не полноценная работа грузчика).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Помощь водителя</td>
+                                <td class="p-3 md:p-5 text-green-500 font-bold text-base md:text-lg whitespace-nowrap">+10-20 ₾</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если нужно помочь подать вещи из кузова (не полноценная работа грузчика).</td>
                             </tr>
                             <tr>
-                                <td class="p-5 font-semibold">Почасовая аренда</td>
-                                <td class="p-5 text-blue-500 font-bold text-lg">от 40 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Если у вас много точек погрузки/выгрузки.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Почасовая аренда</td>
+                                <td class="p-3 md:p-5 text-blue-500 font-bold text-base md:text-lg whitespace-nowrap">от 40 ₾ / час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если у вас много точек погрузки/выгрузки.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="bg-amber-100 border-l-4 border-amber-500 p-4 mt-4 rounded-lg">
-                    <p class="m-0 text-amber-800 font-semibold">⚠️ Цена указана за рейс по городу (до 5-7 км). Выезд в Махинджаури, Чакви или Гонио рассчитывается отдельно.</p>
+                    <p class="m-0 text-amber-800 font-semibold text-sm md:text-base">⚠️ Цена указана за рейс по городу (до 5-7 км). Выезд в Махинджаури, Чакви или Гонио рассчитывается отдельно.</p>
                 </div>
             </div>
 
             <!-- Block 3: Use Cases -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🚚 Когда вам нужно грузовое такси?</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🚚 Когда вам нужно грузовое такси?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">🛒</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Доставка из строительных магазинов</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🛒</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Доставка из строительных магазинов</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Купили плитку, ламинат или цемент в Domino, Gorgia или Modus? Очередь на доставку магазина — 2 дня. Мы приедем через 30 минут, заберем товар и довезем до подъезда.
                         </p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">🛋️</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Покупки мебели и техники</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🛋️</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Покупки мебели и техники</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Заберем диван из мебельного салона или холодильник из Metro City / Carrefour. Везем аккуратно, техника фиксируется ремнями.
                         </p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">📦</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Малый переезд</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">📦</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Малый переезд</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Нужно перевезти чемоданы и коробки на новую квартиру? Зачем заказывать большую машину? Мини-фургон идеально подойдет и сэкономит бюджет.
                         </p>
                     </div>
 
                     <div class="bg-gradient-to-br from-amber-100 to-amber-200 border-2 border-amber-500 rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-4">🏍️</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Перевозка инвентаря</h3>
-                        <p class="text-amber-900 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🏍️</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Перевозка инвентаря</h3>
+                        <p class="text-amber-900 leading-relaxed m-0 text-sm">
                             Перевезем мопед, велосипеды, сап-борды или туристическое снаряжение в любую точку Аджарии.
                         </p>
                     </div>
@@ -152,27 +152,27 @@
 
             <!-- Block 4: Fleet -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🚗 Машины под любой груз</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🚗 Машины под любой груз</h2>
                 <div class="grid gap-6 max-w-4xl mx-auto">
                     <div class="bg-white border-l-4 border-amber-300 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">1. «Каблук» (VW Caddy / Ford Connect)</h3>
-                        <p class="m-0 mb-3 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">1. «Каблук» (VW Caddy / Ford Connect)</h3>
+                        <p class="m-0 mb-3 text-gray-700 leading-relaxed text-sm">
                             Маленький, юркий. Заедет в любой подземный паркинг новостроек (где ограничение по высоте 2м) и проедет по узким улочкам Старого Батуми.
                         </p>
-                        <p class="m-0 text-gray-500 font-semibold">Вмещает: 2 пассажира + 500 кг груза.</p>
+                        <p class="m-0 text-gray-500 font-semibold text-sm">Вмещает: 2 пассажира + 500 кг груза.</p>
                     </div>
 
                     <div class="bg-white border-l-4 border-blue-500 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">2. Грузовой бус (Ford Transit / Sprinter)</h3>
-                        <p class="m-0 mb-3 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">2. Грузовой бус (Ford Transit / Sprinter)</h3>
+                        <p class="m-0 mb-3 text-gray-700 leading-relaxed text-sm">
                             Классическое грузовое такси. Высокий потолок — холодильник встает стоя.
                         </p>
-                        <p class="m-0 text-gray-500 font-semibold">Вмещает: 2 пассажира + 1.5 тонны груза.</p>
+                        <p class="m-0 text-gray-500 font-semibold text-sm">Вмещает: 2 пассажира + 1.5 тонны груза.</p>
                     </div>
 
                     <div class="bg-white border-l-4 border-gray-500 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">3. Открытый борт</h3>
-                        <p class="m-0 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">3. Открытый борт</h3>
+                        <p class="m-0 text-gray-700 leading-relaxed text-sm">
                             Для негабаритных грузов (длинные трубы, доски) или верхней погрузки краном.
                         </p>
                     </div>
@@ -180,26 +180,26 @@
             </div>
 
             <!-- Block 5: Benefits -->
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-10 rounded-3xl mb-12">
-                <h2 class="text-center text-3xl mb-8 text-blue-800 font-bold">⭐ Удобнее, чем обычное такси</h2>
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-10 rounded-3xl mb-12">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-blue-800 font-bold break-words leading-tight">⭐ Удобнее, чем обычное такси</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">🙋♂️ Едьте пассажиром</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">🙋♂️ Едьте пассажиром</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             В кабине всегда есть 1-2 чистых места для вас. Не нужно тратить деньги на отдельное такси, чтобы сопровождать груз.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">⚡️ Срочная подача</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">⚡️ Срочная подача</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Машины дежурят в разных районах Батуми (Химшиашвили, Багратиони, Чавчавадзе). Среднее время подачи — 20-30 минут.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">🛡 Чистые кузова</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">🛡 Чистые кузова</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Мы не возим мусор в тех же машинах, в которых возим мебель. Для мусора у нас отдельный транспорт.
                         </p>
                     </div>
@@ -208,34 +208,34 @@
 
             <!-- Block 6: FAQ -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">❓ Частые вопросы</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">❓ Частые вопросы</h2>
                 <div class="max-w-4xl mx-auto space-y-4">
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Водитель поможет разгрузить?</span>
+                            <span class="text-sm md:text-base">Водитель поможет разгрузить?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500 text-sm md:text-base">
                             Водитель — не грузчик, его задача довезти. Но за небольшую доплату он поможет подать вещи из машины. Если нужен полноценный подъем на этаж — закажите услугу с грузчиком.
                         </div>
                     </details>
 
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Как вы работаете с магазинами (Domino/Gorgia)?</span>
+                            <span class="text-sm md:text-base">Как вы работаете с магазинами (Domino/Gorgia)?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500 text-sm md:text-base">
                             Вы можете сами быть в магазине или просто скинуть нам фото чека и накладной. Мы заберем товар сами и привезем вам (по предоплате товара).
                         </div>
                     </details>
 
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Везете ли вы в Сарпи/Кобулети?</span>
+                            <span class="text-sm md:text-base">Везете ли вы в Сарпи/Кобулети?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-amber-500 text-sm md:text-base">
                             Да, это считается междугородним рейсом. Цену рассчитаем заранее.
                         </div>
                     </details>
@@ -243,16 +243,16 @@
             </div>
 
             <!-- Block 7: CTA -->
-            <div class="bg-gradient-to-br from-black to-gray-800 p-12 rounded-3xl text-center shadow-2xl">
-                <h2 class="text-amber-300 mb-4 text-3xl font-bold">🚚 Машина уже рядом</h2>
-                <p class="text-gray-200 text-lg mb-8 leading-relaxed">
+            <div class="bg-gradient-to-br from-black to-gray-800 p-8 md:p-12 rounded-3xl text-center shadow-2xl">
+                <h2 class="text-amber-300 mb-4 text-2xl md:text-3xl font-bold break-words leading-tight">🚚 Машина уже рядом</h2>
+                <p class="text-gray-200 text-base md:text-lg mb-8 leading-relaxed">
                     Не ждите доставку магазина сутками. Перевезите свои покупки прямо сейчас.
                 </p>
                 <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform text-sm md:text-base">
                         🚚 Вызвать такси (Telegram)
                     </a>
-                    <a href="tel:+995597048630" class="bg-amber-300 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                    <a href="tel:+995597048630" class="bg-amber-300 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform text-sm md:text-base">
                         📞 Позвонить диспетчеру
                     </a>
                 </div>
@@ -267,89 +267,89 @@
         badge: "Тбилиси",
         desc_short: "Грузовое такси по Тбилиси и пригородам. Перевезем покупки из магазинов, мебель, технику. Учитываем пробки. Можете ехать с грузом в кабине.",
         content: `
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl mb-8 border-l-4 border-blue-500">
-                <h2 class="mb-4 text-blue-800 font-bold text-xl">⚡ Когда вам нужно грузовое такси, а не переезд?</h2>
-                <p class="m-0 text-blue-900 leading-relaxed">Не хотите заказывать полноценный переезд из-за пары коробок? Грузовое такси — это дешевле, быстрее и проще!</p>
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-8 rounded-2xl mb-8 border-l-4 border-blue-500">
+                <h2 class="mb-4 text-blue-800 font-bold text-xl md:text-2xl">⚡ Когда вам нужно грузовое такси, а не переезд?</h2>
+                <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">Не хотите заказывать полноценный переезд из-за пары коробок? Грузовое такси — это дешевле, быстрее и проще!</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">💰 Фиксированные цены на перевозку</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-                    <table class="w-full border-collapse">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">💰 Фиксированные цены на перевозку</h2>
+                <div class="bg-white rounded-2xl overflow-x-auto shadow-lg">
+                    <table class="w-full border-collapse min-w-[600px]">
                         <thead>
                             <tr class="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
-                                <th class="p-4 text-left text-lg">Тип авто</th>
-                                <th class="p-4 text-left text-lg">Стоимость</th>
-                                <th class="p-4 text-left text-lg">Для чего подходит</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Тип авто</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Стоимость</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Для чего подходит</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Мини-фургон (Caddy)</td>
-                                <td class="p-5 text-blue-500 font-bold text-lg">от 35 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Стиральная машина, 10 мешков смесей, личные вещи, покупки из супермаркета.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Мини-фургон (Caddy)</td>
+                                <td class="p-3 md:p-5 text-blue-500 font-bold text-base md:text-lg whitespace-nowrap">от 35 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Стиральная машина, 10 мешков смесей, личные вещи, покупки из супермаркета.</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Микроавтобус (Transit)</td>
-                                <td class="p-5 text-blue-500 font-bold text-lg">от 50 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Диван, холодильник, кровать, мебель для одной комнаты.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Микроавтобус (Transit)</td>
+                                <td class="p-3 md:p-5 text-blue-500 font-bold text-base md:text-lg whitespace-nowrap">от 50 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Диван, холодильник, кровать, мебель для одной комнаты.</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Бортовая / Самосвал</td>
-                                <td class="p-5 text-blue-500 font-bold text-lg">от 70 ₾ / рейс</td>
-                                <td class="p-5 text-gray-500 text-sm">Арматура, трубы, доски, сыпучие материалы (песок/щебень).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Бортовая / Самосвал</td>
+                                <td class="p-3 md:p-5 text-blue-500 font-bold text-base md:text-lg whitespace-nowrap">от 70 ₾ / рейс</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Арматура, трубы, доски, сыпучие материалы (песок/щебень).</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Помощь водителя</td>
-                                <td class="p-5 text-green-500 font-bold text-lg">+15-25 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Если нужно помочь подать вещи из кузова (не полноценная работа грузчика).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Помощь водителя</td>
+                                <td class="p-3 md:p-5 text-green-500 font-bold text-base md:text-lg whitespace-nowrap">+15-25 ₾</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если нужно помочь подать вещи из кузова (не полноценная работа грузчика).</td>
                             </tr>
                             <tr>
-                                <td class="p-5 font-semibold">Почасовая аренда</td>
-                                <td class="p-5 text-purple-500 font-bold text-lg">от 45 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Если у вас много точек погрузки/выгрузки.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Почасовая аренда</td>
+                                <td class="p-3 md:p-5 text-purple-500 font-bold text-base md:text-lg whitespace-nowrap">от 45 ₾ / час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если у вас много точек погрузки/выгрузки.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="bg-blue-100 border-l-4 border-blue-500 p-4 mt-4 rounded-lg">
-                    <p class="m-0 text-blue-800 font-semibold">⚠️ Цена указана за рейс по городу (до 7-10 км). Выезд в Рустави, Мцхету или Дигоми рассчитывается отдельно. Учитываем время в пробках.</p>
+                    <p class="m-0 text-blue-800 font-semibold text-sm md:text-base">⚠️ Цена указана за рейс по городу (до 7-10 км). Выезд в Рустави, Мцхету или Дигоми рассчитывается отдельно. Учитываем время в пробках.</p>
                 </div>
             </div>
 
             <!-- Block 3: Use Cases -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🚚 Когда вам нужно грузовое такси?</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🚚 Когда вам нужно грузовое такси?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">🛒</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Доставка из строительных магазинов</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🛒</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Доставка из строительных магазинов</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Купили плитку, ламинат или цемент в Domino, Gorgia или Modus? Очередь на доставку магазина — 2-3 дня. Мы приедем через 40 минут, заберем товар и довезем до подъезда.
                         </p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">🛋️</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Покупки мебели и техники</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🛋️</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Покупки мебели и техники</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Заберем диван из мебельного салона или холодильник из Metro City / Carrefour / East Point. Везем аккуратно, техника фиксируется ремнями.
                         </p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-4xl mb-4">📦</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Малый переезд</h3>
-                        <p class="text-gray-700 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">📦</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Малый переезд</h3>
+                        <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Нужно перевезти чемоданы и коробки на новую квартиру в другой район? Зачем заказывать большую машину? Мини-фургон идеально подойдет и сэкономит бюджет.
                         </p>
                     </div>
 
                     <div class="bg-gradient-to-br from-blue-100 to-blue-200 border-2 border-blue-500 rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-4">🏢</div>
-                        <h3 class="text-xl font-bold mb-3 text-black">Доставка в офис/бизнес-центр</h3>
-                        <p class="text-blue-900 leading-relaxed m-0">
+                        <div class="text-4xl md:text-5xl mb-4">🏢</div>
+                        <h3 class="text-lg font-bold mb-3 text-black">Доставка в офис/бизнес-центр</h3>
+                        <p class="text-blue-900 leading-relaxed m-0 text-sm">
                             Доставим оргтехнику, мебель или документы в Axis Tower, King David, Liberty Tower, Pixel. Знаем все правила въезда в бизнес-центры.
                         </p>
                     </div>
@@ -358,27 +358,27 @@
 
             <!-- Block 4: Fleet -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🚗 Машины под любой груз</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🚗 Машины под любой груз</h2>
                 <div class="grid gap-6 max-w-4xl mx-auto">
                     <div class="bg-white border-l-4 border-blue-400 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">1. «Каблук» (VW Caddy / Ford Connect)</h3>
-                        <p class="m-0 mb-3 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">1. «Каблук» (VW Caddy / Ford Connect)</h3>
+                        <p class="m-0 mb-3 text-gray-700 leading-relaxed text-sm">
                             Маленький, юркий. Идеален для узких улиц Старого Тбилиси (Сололаки, Авлабари). Заедет в любой подземный паркинг.
                         </p>
-                        <p class="m-0 text-gray-500 font-semibold">Вмещает: 2 пассажира + 500 кг груза.</p>
+                        <p class="m-0 text-gray-500 font-semibold text-sm">Вмещает: 2 пассажира + 500 кг груза.</p>
                     </div>
 
                     <div class="bg-white border-l-4 border-blue-600 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">2. Грузовой бус (Ford Transit / Sprinter)</h3>
-                        <p class="m-0 mb-3 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">2. Грузовой бус (Ford Transit / Sprinter)</h3>
+                        <p class="m-0 mb-3 text-gray-700 leading-relaxed text-sm">
                             Классическое грузовое такси. Высокий потолок — холодильник встает стоя. Подходит для доставки по всем районам столицы.
                         </p>
-                        <p class="m-0 text-gray-500 font-semibold">Вмещает: 2 пассажира + 1.5 тонны груза.</p>
+                        <p class="m-0 text-gray-500 font-semibold text-sm">Вмещает: 2 пассажира + 1.5 тонны груза.</p>
                     </div>
 
                     <div class="bg-white border-l-4 border-gray-500 p-6 rounded-2xl shadow-sm">
-                        <h3 class="m-0 mb-3 text-black font-bold text-xl">3. Открытый борт</h3>
-                        <p class="m-0 text-gray-700 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-black font-bold text-lg md:text-xl">3. Открытый борт</h3>
+                        <p class="m-0 text-gray-700 leading-relaxed text-sm">
                             Для негабаритных грузов (длинные трубы, доски) или верхней погрузки краном на стройках в Дигоми,  Глдани.
                         </p>
                     </div>
@@ -386,26 +386,26 @@
             </div>
 
             <!-- Block 5: Benefits -->
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-10 rounded-3xl mb-12">
-                <h2 class="text-center text-3xl mb-8 text-blue-800 font-bold">⭐ Удобнее, чем обычное такси</h2>
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 md:p-10 rounded-3xl mb-12">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-blue-800 font-bold break-words leading-tight">⭐ Удобнее, чем обычное такси</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">🙋♂️ Едьте пассажиром</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">🙋♂️ Едьте пассажиром</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             В кабине всегда есть 1-2 чистых места для вас. Не нужно тратить деньги на отдельное такси, чтобы сопровождать груз.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">🚦 Учитываем пробки</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">🚦 Учитываем пробки</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Машины дежурят в разных районах Тбилиси (Сабуртало, Ваке, Глдани, Дигоми). Знаем все объездные пути. Среднее время подачи — 30-40 минут.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500">
-                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-xl">🛡 Чистые кузова</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <h3 class="m-0 mb-3 text-blue-800 font-bold text-lg md:text-xl">🛡 Чистые кузова</h3>
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Мы не возим мусор в тех же машинах, в которых возим мебель. Для мусора у нас отдельный транспорт.
                         </p>
                     </div>
@@ -414,44 +414,44 @@
 
             <!-- Block 6: FAQ -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">❓ Частые вопросы</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">❓ Частые вопросы</h2>
                 <div class="max-w-4xl mx-auto space-y-4">
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Водитель поможет разгрузить?</span>
+                            <span class="text-sm md:text-base">Водитель поможет разгрузить?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500 text-sm md:text-base">
                             Водитель — не грузчик, его задача довезти. Но за небольшую доплату он поможет подать вещи из машины. Если нужен полноценный подъем на этаж — закажите услугу с грузчиком.
                         </div>
                     </details>
 
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Как вы работаете с магазинами (Domino/Gorgia)?</span>
+                            <span class="text-sm md:text-base">Как вы работаете с магазинами (Domino/Gorgia)?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500 text-sm md:text-base">
                             Вы можете сами быть в магазине или просто скинуть нам фото чека и накладной. Мы заберем товар сами и привезем вам (по предоплате товара).
                         </div>
                     </details>
 
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Везете ли вы в Рустави/Мцхету?</span>
+                            <span class="text-sm md:text-base">Везете ли вы в Рустави/Мцхету?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500 text-sm md:text-base">
                             Да, это считается межгородним рейсом. Цену рассчитаем заранее с учетом расстояния.
                         </div>
                     </details>
 
                     <details class="bg-white mb-4 rounded-xl border border-gray-200 p-5 cursor-pointer group">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
-                            <span>Учитываете ли пробки в цене?</span>
+                            <span class="text-sm md:text-base">Учитываете ли пробки в цене?</span>
                             <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500">
+                        <div class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-blue-500 text-sm md:text-base">
                             Фиксированная цена уже включает среднее время в пути с учетом пробок. Заранее планируем маршрут через объездные пути, если основная дорога перегружена.
                         </div>
                     </details>
@@ -459,16 +459,16 @@
             </div>
 
             <!-- Block 7: CTA -->
-            <div class="bg-gradient-to-br from-blue-900 to-blue-800 p-12 rounded-3xl text-center shadow-2xl">
-                <h2 class="text-blue-200 mb-4 text-3xl font-bold">🚚 Машина уже в пути</h2>
-                <p class="text-blue-100 text-lg mb-8 leading-relaxed">
+            <div class="bg-gradient-to-br from-blue-900 to-blue-800 p-8 md:p-12 rounded-3xl text-center shadow-2xl">
+                <h2 class="text-blue-200 mb-4 text-2xl md:text-3xl font-bold break-words leading-tight">🚚 Машина уже в пути</h2>
+                <p class="text-blue-100 text-base md:text-lg mb-8 leading-relaxed">
                     Не ждите доставку магазина днями. Перевезите свои покупки по столице прямо сейчас.
                 </p>
                 <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-blue-400 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-blue-400 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform text-sm md:text-base">
                         🚚 Вызвать такси (Telegram)
                     </a>
-                    <a href="tel:+995597048630" class="bg-blue-200 text-blue-900 px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                    <a href="tel:+995597048630" class="bg-blue-200 text-blue-900 px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform text-sm md:text-base">
                         📞 Позвонить диспетчеру
                     </a>
                 </div>
@@ -519,7 +519,7 @@
                         <div class="flex gap-6 items-start">
                             <div class="bg-amber-300 min-w-[50px] h-[50px] rounded-xl flex items-center justify-center font-bold text-2xl text-black">2</div>
                             <div class="flex-1">
-                                <h3 class="mb-4 text-black font-bold text-2xl">Профессиональная упаковка</h3>
+                                <h3 class="mb-4 text-black font-bold text-2xl break-words">📦 Надежная упаковка</h3>
                                 
                                 <div class="bg-amber-50 p-4 rounded-lg mb-4">
                                     <p class="mb-2 font-bold text-amber-800">📦 Корпусная мебель</p>
@@ -871,144 +871,102 @@
     },
 
     trash: {
-        title: "Вывоз строительного мусора и старой мебели в Тбилиси и Батуми. С грузчиками и утилизацией на полигоне",
-        price: "от 80 ₾",
+        title: "Вывоз мусора в Грузии: Тбилиси и Батуми",
+        price: "от 60 ₾",
         icon: "trash",
         badge: null,
-        desc_short: "Работаем по всей Грузии: Батуми, Тбилиси, Кутаиси. Вывоз строительного мусора, старой мебели и техники на официальный полигон.",
+        desc_short: "Строительный хлам, старая мебель, очистка квартир. Вывозим на официальные полигоны. Без штрафов.",
         content: `
-            <div style="background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%); padding: 2.5rem; border-radius: 1rem; margin-bottom: 3rem; border-left: 5px solid #DC2626; box-shadow: 0 4px 12px rgba(220,38,38,0.2);">
-                <h2 style="margin: 0 0 1.5rem 0; color: #000; font-size: 1.8rem;">⚠️ ВНИМАНИЕ! Не выбрасывайте мусор в обычные баки</h2>
-                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 1rem;">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #DC2626; font-size: 1.3rem;">📜 О законе</h3>
-                    <p style="margin: 0; color: #7F1D1D; line-height: 1.7; font-size: 1.05rem;">
-                        <strong>В Грузии запрещено</strong> выбрасывать строительные отходы (плитку, бетон, кирпичи, штукатурку) в городские мусорные баки. <strong>Штрафы высокие!</strong>
-                    </p>
-                </div>
-                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem;">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #059669; font-size: 1.3rem;">✓ Наше решение</h3>
-                    <p style="margin: 0; color: #374151; line-height: 1.7;">
-                        Мы вывозим мусор <strong>официально</strong> на специализированные свалки (полигоны). Вы получаете чистую квартиру и никаких проблем с соседями или муниципальной инспекцией.
-                    </p>
-                </div>
-            </div>
-
-            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">🗑️ Что именно мы вывозим</h2>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
-                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
-                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🏗️ Строительный мусор</h3>
-                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(в мешках)</p>
-                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
-                        <li>Битая плитка</li>
-                        <li>Штукатурка и бетон</li>
-                        <li>Кирпичи</li>
-                        <li>Старые обои после ремонта</li>
-                    </ul>
+            <!-- 2. CITY SELECTOR -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                <div class="bg-white border-2 border-gray-100 p-6 rounded-2xl shadow-sm text-center hover:border-red-200 transition-colors">
+                    <div class="text-4xl mb-2">📍</div>
+                    <h3 class="text-xl font-bold mb-1 text-black">Тбилиси</h3>
+                    <p class="text-sm text-gray-500 mb-4">Полигон Глдани. Цена от <span class="font-bold text-red-600">80 ₾</span>.</p>
+                    <a href="/service/tbilisi_trash" class="block w-full bg-red-50 text-red-600 font-bold py-3 rounded-xl hover:bg-red-100 transition-colors">
+                        Тарифы Тбилиси
+                    </a>
                 </div>
 
-                <div style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border: 2px solid #FCD34D; border-radius: 1rem; padding: 2rem; box-shadow: 0 4px 8px rgba(252,211,77,0.2);">
-                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🪑 Старая мебель (Хлам)</h3>
-                    <p style="margin: 0 0 0.5rem 0; color: #92400E; font-size: 0.9rem; font-style: italic;">(перед продажей квартиры)</p>
-                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
-                        <li>Советские стенки</li>
-                        <li>Диваны и кресла</li>
-                        <li>Шкафы</li>
-                        <li>Кухонные гарнитуры</li>
-                    </ul>
-                </div>
-
-                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
-                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">📺 Бытовая техника</h3>
-                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(тяжелое)</p>
-                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
-                        <li>Старые холодильники</li>
-                        <li>Стиральные машины</li>
-                        <li>Чугунные ванны</li>
-                        <li>Батареи отопления</li>
-                    </ul>
-                </div>
-
-                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem;">
-                    <h3 style="margin: 0 0 1rem 0; color: #000; font-size: 1.3rem;">🚪 Рамы и двери</h3>
-                    <p style="margin: 0 0 0.5rem 0; color: #6B7280; font-size: 0.9rem; font-style: italic;">(после замены)</p>
-                    <ul style="margin: 0; padding-left: 1.2rem; color: #374151; line-height: 1.8;">
-                        <li>Оконные рамы</li>
-                        <li>Старые двери</li>
-                        <li>Деревянные коробки</li>
-                    </ul>
+                <div class="bg-white border-2 border-gray-100 p-6 rounded-2xl shadow-sm text-center hover:border-blue-200 transition-colors">
+                    <div class="text-4xl mb-2">🌊</div>
+                    <h3 class="text-xl font-bold mb-1 text-black">Батуми</h3>
+                    <p class="text-sm text-gray-500 mb-4">Полигон Адлия. Цена от <span class="font-bold text-blue-600">60 ₾</span>.</p>
+                    <a href="/service/batumi_trash" class="block w-full bg-blue-50 text-blue-600 font-bold py-3 rounded-xl hover:bg-blue-100 transition-colors">
+                        Тарифы Батуми
+                    </a>
                 </div>
             </div>
 
-            <div style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); padding: 2.5rem; border-radius: 1rem; margin-bottom: 3rem; border: 2px solid #3B82F6;">
-                <h2 style="margin: 0 0 1.5rem 0; color: #000; font-size: 1.8rem;">📋 Как подготовиться к вывозу</h2>
-                
-                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 1rem;">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #1E40AF; font-size: 1.2rem;">💼 Сыпучий мусор</h3>
-                    <p style="margin: 0; color: #374151; line-height: 1.7;">
-                        <strong>Важно!</strong> Мелкий мусор должен быть упакован в <strong>прочные строительные мешки</strong> (зеленые/белые полипропиленовые). Мы не можем выносить мусор лопатами из квартиры.
-                    </p>
+            <!-- 3. LIST BLOCK -->
+            <h2 class="text-2xl font-bold text-center mb-6 text-black">Что мы вывозим</h2>
+            <div class="grid grid-cols-2 gap-4 mb-12">
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🧱</div>
+                    <h3 class="font-bold text-sm text-black">Строительный мусор</h3>
+                    <p class="text-xs text-gray-500 mt-1">Мешки, плитка, кирпич</p>
                 </div>
-
-                <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 0.75rem;">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #1E40AF; font-size: 1.2rem;">🪚 Крупногабаритная мебель</h3>
-                    <p style="margin: 0; color: #374151; line-height: 1.7;">
-                        Если мебель не влезает в лифт или дверной проем — <strong>мы разберем ее на месте</strong>. Приедем с инструментами.
-                    </p>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🛋️</div>
+                    <h3 class="font-bold text-sm text-black">Старая мебель</h3>
+                    <p class="text-xs text-gray-500 mt-1">С разборкой</p>
                 </div>
-            </div>
-
-            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">🚛 Наш транспорт и грузчики</h2>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
-                <div style="background: #fff; border: 2px solid #E5E7EB; border-radius: 1rem; padding: 2rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚐</div>
-                    <h3 style="color: #000; margin: 0 0 1rem 0; font-size: 1.3rem;">Малый объем</h3>
-                    <p style="margin: 0 0 1rem 0; color: #6B7280; font-style: italic; font-size: 0.9rem;">10-20 мешков</p>
-                    <p style="margin: 0; color: #374151; line-height: 1.7; font-size: 0.95rem;">
-                        Микроавтобус / Ford Transit для небольшого ремонта или вывоза одной старой мебели.
-                    </p>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🛁</div>
+                    <h3 class="font-bold text-sm text-black">Сантехника</h3>
+                    <p class="text-xs text-gray-500 mt-1">Ванны, трубы</p>
                 </div>
-
-                <div style="background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%); border: 2px solid #6B7280; border-radius: 1rem; padding: 2rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚛</div>
-                    <h3 style="color: #000; margin: 0 0 1rem 0; font-size: 1.3rem;">Ремонт "под ключ"</h3>
-                    <p style="margin: 0 0 1rem 0; color: #6B7280; font-style: italic; font-size: 0.9rem;">Тонны мусора</p>
-                    <p style="margin: 0; color: #374151; line-height: 1.7; font-size: 0.95rem;">
-                        Самосвал (ЗИЛ/КамАЗ) или большой грузовик для капитального ремонта.
-                    </p>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🧹</div>
+                    <h3 class="font-bold text-sm text-black">Полная очистка</h3>
+                    <p class="text-xs text-gray-500 mt-1">Квартиры под ноль</p>
                 </div>
             </div>
 
-            <div style="background: #FFFBEB; padding: 2rem; border-radius: 1rem; border-left: 4px solid #F59E0B; margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                <h3 style="margin: 0 0 1rem 0; color: #000;">💪 Грузчики</h3>
-                <p style="margin: 0; color: #78350F; line-height: 1.7;">
-                    Крепкие ребята, которые <strong>спустят тяжелые мешки с любого этажа</strong> (даже без лифта). Это тяжелая физическая работа — оплачивается отдельно.
+            <!-- 4. WARNING BLOCK -->
+            <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl mb-12">
+                <h3 class="text-red-900 font-bold text-lg mb-2">🚫 Штраф до 1000 ₾</h3>
+                <p class="text-red-800 text-sm leading-relaxed m-0">
+                    За выброс строительного мусора в городские баки. Мэрия следит по камерам. Не рискуйте. Мы вывозим официально (есть талоны).
                 </p>
             </div>
 
-            <h2 style="text-align: center; font-size: 2.2rem; margin: 3rem 0 2rem 0; color: #000;">❓ Вопросы об утилизации</h2>
-
-            <div style="max-width: 900px; margin: 0 auto 3rem auto;">
-                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Нужно ли мне нанимать машину, если у меня всего один старый диван?</h3>
-                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
-                        <strong>Ответ:</strong> Да, мы приедем и заберем его. Это услуга "Вывоз старой мебели" — подходит для освобождения квартиры перед продажей.
-                    </p>
+            <!-- 5. STEPS BLOCK -->
+            <h2 class="text-2xl font-bold text-center mb-8 text-black">Как это работает</h2>
+            <div class="space-y-6 mb-12 max-w-md mx-auto">
+                <div class="flex items-start gap-4">
+                    <div class="bg-yellow-400 text-black font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-black">📸 Оценка</h3>
+                        <p class="text-gray-600 text-sm">Пришлите фото хлама в Telegram или WhatsApp.</p>
+                    </div>
                 </div>
-
-                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Вы предоставляете мешки?</h3>
-                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
-                        <strong>Ответ:</strong> Можем привезти свои прочные полипропиленовые мешки за дополнительную плату, если у вас их нет.
-                    </p>
+                <div class="flex items-start gap-4">
+                    <div class="bg-yellow-400 text-black font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-black">🚛 Вывоз</h3>
+                        <p class="text-gray-600 text-sm">Приедем, сами погрузим, подметем за собой.</p>
+                    </div>
                 </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-yellow-400 text-black font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-black">✅ Финал</h3>
+                        <p class="text-gray-600 text-sm">Чистая квартира без усилий и штрафов.</p>
+                    </div>
+                </div>
+            </div>
 
-                <div style="background: #fff; border-left: 4px solid #DC2626; border-radius: 0.5rem; padding: 1.5rem 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-                    <h3 style="margin: 0 0 0.8rem 0; color: #000; font-size: 1.2rem;">Куда вы это везете?</h3>
-                    <p style="margin: 0; color: #6B7280; line-height: 1.7;">
-                        <strong>Ответ:</strong> На <strong>официальный городской полигон ТБО</strong>, а не в ближайший овраг. Это легально и безопасно для окружающей среды.
-                    </p>
+            <!-- 6. CTA BLOCK -->
+            <div class="bg-gray-900 rounded-2xl p-8 text-center shadow-xl">
+                <h2 class="text-2xl font-bold text-white mb-6">Очистите квартиру сегодня</h2>
+                <div class="flex flex-col gap-3">
+                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="block w-full bg-yellow-400 text-black font-bold py-4 rounded-xl hover:bg-yellow-500 transition-colors">
+                        Рассчитать по фото
+                    </a>
+                    <a href="tel:+995597048630" class="block w-full bg-white/10 text-white font-bold py-4 rounded-xl hover:bg-white/20 transition-colors">
+                        📞 Позвонить оператору
+                    </a>
                 </div>
             </div>
         `,
@@ -1329,7 +1287,7 @@
                 </div>
             </div>
 
-            <h2 class="text-center text-4xl mb-8 text-black font-bold">📦 Профессиональная упаковка</h2>
+            <h2 class="text-center text-2xl md:text-4xl mb-8 text-black font-bold break-words">📦 Надежная упаковка</h2>
             <p class="text-center text-gray-500 mb-8 max-w-3xl mx-auto text-lg">
                 Правильная упаковка — это 80% успеха переезда. Защитите свои вещи от царапин, сколов и поломок
             </p>
@@ -1912,63 +1870,63 @@
         desc_short: "Услуги грузчиков в Батуми. Подъем на этаж без лифта, разгрузка фур, перестановка мебели. Трезвые и аккуратные.",
         content: `
             <!-- Block 1: Hero -->
-            <div class="bg-gradient-to-br from-red-100 to-red-200 p-8 rounded-2xl mb-8">
-                <h2 class="text-red-800 mb-4 font-bold text-3xl">💪 Грузчики в Батуми</h2>
-                <p class="text-red-900 text-lg">Нужно поднять диван на 5-й этаж старого дома на Руставели? Или разгрузить машину с товаром на рынке Хопа? Наши ребята справятся.</p>
+            <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 md:p-8 rounded-2xl mb-8">
+                <h2 class="text-red-800 mb-4 font-bold text-2xl md:text-3xl">💪 Грузчики в Батуми</h2>
+                <p class="text-red-900 text-base md:text-lg">Нужно поднять диван на 5-й этаж старого дома на Руставели? Или разгрузить машину с товаром на рынке Хопа? Наши ребята справятся.</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-4xl mb-8 text-black font-bold">💰 Прозрачные тарифы без скрытых доплат</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                    <table class="w-full border-collapse">
+                <h2 class="text-center text-2xl md:text-4xl mb-8 text-black font-bold break-words leading-tight">💰 Прозрачные тарифы без скрытых доплат</h2>
+                <div class="bg-white rounded-2xl overflow-x-auto shadow-sm border border-gray-200">
+                    <table class="w-full border-collapse min-w-[600px]">
                         <thead>
                             <tr class="bg-gradient-to-br from-red-600 to-red-700 text-white">
-                                <th class="p-4 text-left text-lg font-semibold">Услуга</th>
-                                <th class="p-4 text-left text-lg font-semibold">Цена</th>
-                                <th class="p-4 text-left text-lg font-semibold">Примечание</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Услуга</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Цена</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Примечание</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Грузчик (Стандарт)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">50 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Погрузка/разгрузка вещей, коробок.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Грузчик (Стандарт)</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">50 ₾ / час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Погрузка/разгрузка вещей, коробок.</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Подъем стройматериалов</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">сдельная</td>
-                                <td class="p-5 text-gray-500 text-sm">Расчет за тонну или количество мешков/этажей.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Подъем стройматериалов</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg">сдельная</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Расчет за тонну или количество мешков/этажей.</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Спуск/Подъем без лифта</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">2-5 ₾ / этаж</td>
-                                <td class="p-5 text-gray-500 text-sm">Зависит от веса предмета (холодильник, диван).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Спуск/Подъем без лифта</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">2-5 ₾ / этаж</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Зависит от веса предмета (холодильник, диван).</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Такелаж (Тяжести >100кг)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">от 100 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Пианино, сейфы, банкоматы (используем ремни).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Такелаж (Тяжести >100кг)</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">от 100 ₾</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Пианино, сейфы, банкоматы (используем ремни).</td>
                             </tr>
                             <tr>
-                                <td class="p-5 font-semibold">Разборка/Сборка</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">Входит в час</td>
-                                <td class="p-5 text-gray-500 text-sm">Если заказана почасовая работа и есть инструмент.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Разборка/Сборка</td>
+                                <td class="p-3 md:p-5 text-emerald-600 font-bold text-base md:text-lg">Входит в час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если заказана почасовая работа и есть инструмент.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="bg-amber-100 border-l-4 border-amber-500 p-4 mt-4 rounded-lg">
-                    <p class="m-0 text-amber-900 font-semibold">⚠️ Важно: При работе в ночное время (после 22:00) тариф может быть увеличен.</p>
+                    <p class="m-0 text-amber-900 font-semibold text-sm md:text-base">⚠️ Важно: При работе в ночное время (после 22:00) тариф может быть увеличен.</p>
                 </div>
             </div>
 
             <!-- Block 3: Services Grid -->
             <div class="mb-12">
-                <h2 class="text-center text-4xl mb-8 text-black font-bold">🛠️ Решаем любые задачи с тяжестями в Батуми</h2>
+                <h2 class="text-center text-2xl md:text-4xl mb-8 text-black font-bold break-words leading-tight">🛠️ Решаем любые задачи с тяжестями в Батуми</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🏗️</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏗️</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Помощь при ремонте</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Батуми — город строек. Поднимем мешки с цементом, песком, плитку и гипсокартон на любой этаж.
@@ -1976,7 +1934,7 @@
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🏠</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏠</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Квартирные задачи</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Перестановка мебели внутри квартиры, спуск старого дивана на мусорку, погрузка личных вещей в машину.
@@ -1984,7 +1942,7 @@
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🚚</div>
+                        <div class="text-4xl md:text-5xl mb-4">🚚</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Разгрузка фур</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Приехал товар для магазина или ресторана? Оперативно разгрузим машину, отсортируем коробки.
@@ -1992,7 +1950,7 @@
                     </div>
 
                     <div class="bg-gradient-to-br from-amber-100 to-amber-200 border-2 border-amber-500 rounded-2xl p-6 shadow-md">
-                        <div class="text-5xl mb-4">🏢</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏢</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Подъем в высотки</h3>
                         <p class="text-amber-900 leading-relaxed m-0 text-sm">
                             Знаем специфику работы в апарт-отелях (Orbi, Alliance): где служебный вход и как договориться с охраной.
@@ -2002,26 +1960,26 @@
             </div>
 
             <!-- Block 4: Benefits -->
-            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-10 rounded-3xl mb-12">
-                <h2 class="text-center text-3xl mb-8 text-blue-800 font-bold">⭐ Профессиональный подход к тяжелой работе</h2>
+            <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-10 rounded-3xl mb-12">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-blue-800 font-bold break-words leading-tight">⭐ Профессиональный подход к тяжелой работе</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-blue-800 font-bold text-xl">✅ Трезвость и Культура</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Никакого перегара. Наши ребята вежливые, опрятные и работают быстро, без лишних перекуров.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-blue-800 font-bold text-xl">✅ Инструмент и Ремни</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Приходим не с пустыми руками. Есть такелажные ремни для переноски шкафов (чтобы не царапать пол) и шуруповерты.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-blue-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-blue-800 font-bold text-xl">✅ Работа в Старом городе</h3>
-                        <p class="m-0 text-blue-900 leading-relaxed">
+                        <p class="m-0 text-blue-900 leading-relaxed text-sm md:text-base">
                             Умеем заносить крупную мебель (диваны, столешницы) по узким винтовым лестницам старого Батуми, не повредив стены.
                         </p>
                     </div>
@@ -2030,53 +1988,53 @@
 
             <!-- Block 5: Process -->
             <div class="mb-12">
-                <h2 class="text-center text-4xl mb-8 text-black font-bold">📋 Как заказать бригаду</h2>
+                <h2 class="text-center text-2xl md:text-4xl mb-8 text-black font-bold break-words leading-tight">📋 Как заказать бригаду</h2>
                 <div class="grid gap-6 max-w-4xl mx-auto">
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">1</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">1</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Звонок/Заявка</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Звонок/Заявка</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Пишете в Telegram, что и в каком объеме нужно перенести.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">2</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">2</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Оценка</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Оценка</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Если задача нестандартная (например, поднять 5 тонн плитки), мы называем сдельную цену заранее.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">3</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">3</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Выезд</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Выезд</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Бригада приезжает точно ко времени.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">4</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">4</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Работа</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Работа</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Выполняем задачу.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-gradient-to-br from-emerald-100 to-emerald-200 p-6 rounded-2xl shadow-sm border-2 border-emerald-500">
-                        <div class="bg-emerald-500 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">5</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-gradient-to-br from-emerald-100 to-emerald-200 p-5 md:p-6 rounded-2xl shadow-sm border-2 border-emerald-500">
+                        <div class="bg-emerald-500 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">5</div>
                         <div>
-                            <h3 class="mb-2 text-emerald-800 font-bold text-xl">Оплата</h3>
-                            <p class="m-0 text-emerald-900 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-emerald-800 font-bold text-lg md:text-xl">Оплата</h3>
+                            <p class="m-0 text-emerald-900 leading-relaxed text-sm md:text-base">
                                 Оплата по факту выполненных работ (наличные или перевод).
                             </p>
                         </div>
@@ -2086,14 +2044,14 @@
 
             <!-- Block 6: FAQ -->
             <div class="mb-12">
-                <h2 class="text-center text-4xl mb-8 text-black font-bold">❓ Частые вопросы</h2>
+                <h2 class="text-center text-2xl md:text-4xl mb-8 text-black font-bold break-words leading-tight">❓ Частые вопросы</h2>
                 <div class="max-w-4xl mx-auto space-y-4">
                     <details class="group bg-white rounded-xl border border-gray-200 p-5 cursor-pointer open:ring-2 open:ring-red-500/20">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
                             <span>Вы поднимаете стройматериалы, если лифт не работает?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Да, в новостройках это частая проблема. Мы осуществляем ручной подъем по лестнице. Стоимость рассчитывается индивидуально (зависит от этажа и веса).
                         </p>
                     </details>
@@ -2103,7 +2061,7 @@
                             <span>Минимальное время заказа?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Оплата почасовая за фактически отработанное время.
                         </p>
                     </details>
@@ -2113,7 +2071,7 @@
                             <span>Можно ли заказать одного человека?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Да, если вам нужно просто помочь переставить шкаф или разгрузить легковую машину.
                         </p>
                     </details>
@@ -2121,16 +2079,16 @@
             </div>
 
             <!-- Block 7: CTA -->
-            <div class="bg-gradient-to-br from-red-600 to-red-700 p-12 rounded-3xl text-center shadow-xl">
-                <h2 class="text-amber-100 mb-4 text-3xl font-bold">💪 Нужна физическая помощь?</h2>
-                <p class="text-red-100 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+            <div class="bg-gradient-to-br from-red-600 to-red-700 p-8 md:p-12 rounded-3xl text-center shadow-xl">
+                <h2 class="text-amber-100 mb-4 text-2xl md:text-3xl font-bold break-words leading-tight">💪 Нужна физическая помощь?</h2>
+                <p class="text-red-100 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Не срывайте спину — доверьте тяжести нам. Бригада будет у вас в течение часа.
                 </p>
                 <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-amber-100 hover:bg-white text-red-800 px-8 py-4 rounded-full font-bold transition-all shadow-lg">
+                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-amber-100 hover:bg-white text-red-800 px-8 py-4 rounded-full font-bold transition-all shadow-lg text-sm md:text-base">
                         👷 Вызвать грузчиков
                     </a>
-                    <a href="tel:+995597048630" class="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-full font-bold transition-all ring-2 ring-amber-100/50">
+                    <a href="tel:+995597048630" class="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-full font-bold transition-all ring-2 ring-amber-100/50 text-sm md:text-base">
                         📞 Позвонить
                     </a>
                 </div>
@@ -2594,63 +2552,63 @@
         desc_short: "Услуги грузчиков в Тбилиси. Разгрузка фур, подъем мебели на этаж, перестановка в квартире. Оплата почасовая.",
         content: `
             <!-- Block 1: Hero -->
-            <div class="bg-gradient-to-br from-red-100 to-red-200 p-10 rounded-3xl mb-12">
-                <h2 class="text-red-800 mb-6 font-extrabold text-3xl">💪 Зачем срывать спину?</h2>
-                <p class="text-red-900 text-lg leading-relaxed">Нужно поднять новое пианино на 9 этаж пешком, потому что оно не влезает в лифт? Или разгрузить фуру с товаром на рынке Лило? Наши ребята сделают это быстро и без лишних перекуров.</p>
+            <div class="bg-gradient-to-br from-red-100 to-red-200 p-6 md:p-10 rounded-3xl mb-12">
+                <h2 class="text-red-800 mb-4 md:mb-6 font-extrabold text-2xl md:text-3xl">💪 Зачем срывать спину?</h2>
+                <p class="text-red-900 text-base md:text-lg leading-relaxed">Нужно поднять новое пианино на 9 этаж пешком, потому что оно не влезает в лифт? Или разгрузить фуру с товаром на рынке Лило? Наши ребята сделают это быстро и без лишних перекуров.</p>
             </div>
 
             <!-- Block 2: Pricing Table -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">💰 Прозрачные тарифы без скрытых доплат</h2>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                    <table class="w-full border-collapse">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">💰 Прозрачные тарифы без скрытых доплат</h2>
+                <div class="bg-white rounded-2xl overflow-x-auto shadow-sm border border-gray-200">
+                    <table class="w-full border-collapse min-w-[600px]">
                         <thead>
                             <tr class="bg-gradient-to-br from-red-600 to-red-700 text-white">
-                                <th class="p-4 text-left text-lg font-semibold">Услуга</th>
-                                <th class="p-4 text-left text-lg font-semibold">Цена</th>
-                                <th class="p-4 text-left text-lg font-semibold">Примечание</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Услуга</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Цена</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg font-semibold">Примечание</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Грузчик (Стандарт)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">50 ₾ / час</td>
-                                <td class="p-5 text-gray-500 text-sm">Погрузка/разгрузка вещей, коробок.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Грузчик (Стандарт)</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">50 ₾ / час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Погрузка/разгрузка вещей, коробок.</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Подъем стройматериалов</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">сдельная</td>
-                                <td class="p-5 text-gray-500 text-sm">Расчет за тонну или количество мешков/этажей.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Подъем стройматериалов</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg">сдельная</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Расчет за тонну или количество мешков/этажей.</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Спуск/Подъем без лифта</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">3-7 ₾ / этаж</td>
-                                <td class="p-5 text-gray-500 text-sm">Зависит от веса предмета (холодильник, диван).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Спуск/Подъем без лифта</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">3-7 ₾ / этаж</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Зависит от веса предмета (холодильник, диван).</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Такелаж (Тяжести >100кг)</td>
-                                <td class="p-5 text-red-600 font-bold text-lg">от 120 ₾</td>
-                                <td class="p-5 text-gray-500 text-sm">Пианино, сейфы, банкоматы (используем ремни).</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Такелаж (Тяжести >100кг)</td>
+                                <td class="p-3 md:p-5 text-red-600 font-bold text-base md:text-lg whitespace-nowrap">от 120 ₾</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Пианино, сейфы, банкоматы (используем ремни).</td>
                             </tr>
                             <tr>
-                                <td class="p-5 font-semibold">Разборка/Сборка</td>
-                                <td class="p-5 text-emerald-600 font-bold text-lg">Входит в час</td>
-                                <td class="p-5 text-gray-500 text-sm">Если заказана почасовая работа и есть инструмент.</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Разборка/Сборка</td>
+                                <td class="p-3 md:p-5 text-emerald-600 font-bold text-base md:text-lg">Входит в час</td>
+                                <td class="p-3 md:p-5 text-gray-500 text-xs md:text-sm">Если заказана почасовая работа и есть инструмент.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="bg-amber-100 border-l-4 border-amber-500 p-4 mt-6 rounded-lg">
-                    <p class="m-0 text-amber-900 font-semibold">⚠️ Важно: При работе в ночное время (после 22:00) тариф может быть увеличен.</p>
+                    <p class="m-0 text-amber-900 font-semibold text-sm md:text-base">⚠️ Важно: При работе в ночное время (после 22:00) тариф может быть увеличен.</p>
                 </div>
             </div>
 
             <!-- Block 3: Services Grid -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🛠️ Решаем любые задачи с тяжестями в столице</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🛠️ Решаем любые задачи с тяжестями в столице</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🏗️</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏗️</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Помощь на стройках</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Тбилиси активно застраивается. Поднимем мешки с цементом, песком, блоки, плитку на любой этаж в районах Сабуртало, Дигоми, Глдани. Даже если лифт не работает.
@@ -2658,7 +2616,7 @@
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🏠</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏠</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Квартирные задачи</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Перестановка мебели, спуск старого дивана, погрузка личных вещей в машину. Работаем во всех районах: от Сололаки до Варкетили.
@@ -2666,7 +2624,7 @@
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm">
-                        <div class="text-5xl mb-4">🚚</div>
+                        <div class="text-4xl md:text-5xl mb-4">🚚</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Разгрузка фур</h3>
                         <p class="text-gray-700 leading-relaxed m-0 text-sm">
                             Приехал груз на Лило? Быстро разгрузим, отсортируем коробки и занесем на склад. Работаем с магазинами, ресторанами, оптовиками.
@@ -2674,7 +2632,7 @@
                     </div>
 
                     <div class="bg-gradient-to-br from-blue-100 to-blue-200 border-2 border-blue-500 rounded-2xl p-6 shadow-md">
-                        <div class="text-5xl mb-4">🏢</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏢</div>
                         <h3 class="text-lg font-bold mb-3 text-black">Подъем в бизнес-центры</h3>
                         <p class="text-blue-900 leading-relaxed m-0 text-sm">
                             Знаем специфику Axis Tower, King David, Liberty Tower. Где служебный вход, как договориться о грузовом лифте, как работать без повреждений.
@@ -2684,26 +2642,26 @@
             </div>
 
             <!-- Block 4: Benefits -->
-            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-10 rounded-3xl mb-12">
-                <h2 class="text-center text-3xl mb-8 text-amber-900 font-bold">⭐ Профессиональный подход к тяжелой работе</h2>
+            <div class="bg-gradient-to-br from-amber-100 to-amber-200 p-6 md:p-10 rounded-3xl mb-12">
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-amber-900 font-bold break-words leading-tight">⭐ Профессиональный подход к тяжелой работе</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-amber-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-amber-600 font-bold text-xl">✅ Трезвость и Культура</h3>
-                        <p class="m-0 text-amber-900 leading-relaxed">
+                        <p class="m-0 text-amber-900 leading-relaxed text-sm md:text-base">
                             Никакого перегара. Наши ребята вежливые, опрятные и работают быстро, без лишних перекуров. Это норма для столицы.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-amber-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-amber-600 font-bold text-xl">✅ Инструмент и Ремни</h3>
-                        <p class="m-0 text-amber-900 leading-relaxed">
+                        <p class="m-0 text-amber-900 leading-relaxed text-sm md:text-base">
                             Приходим с такелажными ремнями для переноски тяжелой мебели (чтобы не царапать пол) и шуруповертами для разборки кроватей/шкафов.
                         </p>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl border-l-4 border-amber-500 backdrop-blur-sm">
                         <h3 class="mb-3 text-amber-600 font-bold text-xl">✅ Работа в Старом городе</h3>
-                        <p class="m-0 text-amber-900 leading-relaxed">
+                        <p class="m-0 text-amber-900 leading-relaxed text-sm md:text-base">
                             Умеем заносить крупную мебель по узким лестницам старых зданий Сололаки, Авлабари, Мтацминды, не повредив ни стены, ни вещи.
                         </p>
                     </div>
@@ -2712,53 +2670,53 @@
 
             <!-- Block 5: Process -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">📋 Как заказать бригаду</h2>
-                <div class="grid gap-6 max-w-4xl mx-auto">
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">1</div>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">📋 Как заказать бригаду</h2>
+                <div class="grid gap-4 md:gap-6 max-w-4xl mx-auto">
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">1</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Звонок/Заявка</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Звонок/Заявка</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Пишете в Telegram или звоните, что и куда нужно перенести/поднять.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">2</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">2</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Оценка</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Оценка</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Для нестандартных задач (например, поднять 10 тонн стройматериалов) называем точную сдельную цену.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">3</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">3</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Выезд</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Выезд</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Бригада приезжает вовремя (учитываем тбилисские пробки).
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-red-600 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">4</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-white p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="bg-red-600 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">4</div>
                         <div>
-                            <h3 class="mb-2 text-black font-bold text-xl">Работа</h3>
-                            <p class="m-0 text-gray-500 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-black font-bold text-lg md:text-xl">Работа</h3>
+                            <p class="m-0 text-gray-500 leading-relaxed text-sm md:text-base">
                                 Быстро и аккуратно выполняем задачу.
                             </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6 items-start bg-gradient-to-br from-emerald-100 to-emerald-200 p-6 rounded-2xl shadow-sm border-2 border-emerald-500">
-                        <div class="bg-emerald-500 min-w-[50px] h-[50px] rounded-full flex items-center justify-center font-bold text-2xl text-white flex-shrink-0">5</div>
+                    <div class="flex gap-4 md:gap-6 items-start bg-gradient-to-br from-emerald-100 to-emerald-200 p-5 md:p-6 rounded-2xl shadow-sm border-2 border-emerald-500">
+                        <div class="bg-emerald-500 min-w-[40px] h-[40px] md:min-w-[50px] md:h-[50px] rounded-full flex items-center justify-center font-bold text-xl md:text-2xl text-white flex-shrink-0">5</div>
                         <div>
-                            <h3 class="mb-2 text-emerald-800 font-bold text-xl">Оплата</h3>
-                            <p class="m-0 text-emerald-900 leading-relaxed">
+                            <h3 class="mb-1 md:mb-2 text-emerald-800 font-bold text-lg md:text-xl">Оплата</h3>
+                            <p class="m-0 text-emerald-900 leading-relaxed text-sm md:text-base">
                                 Оплата по факту (наличные, Bank of Georgia, TBC).
                             </p>
                         </div>
@@ -2768,14 +2726,14 @@
 
             <!-- Block 6: FAQ -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">❓ Частые вопросы</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">❓ Частые вопросы</h2>
                 <div class="max-w-4xl mx-auto space-y-4">
                     <details class="group bg-white rounded-xl border border-gray-200 p-5 cursor-pointer open:ring-2 open:ring-red-500/20">
                         <summary class="font-bold text-lg text-black list-none flex justify-between items-center">
                             <span>Поднимаете ли материалы в старых домах без лифта?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Да, это частая ситуация в Тбилиси (Сололаки, Мтацминда). Поднимаем вручную. Цена зависит от этажа и веса груза.
                         </p>
                     </details>
@@ -2785,7 +2743,7 @@
                             <span>Работаете ли в отдаленных районах (Дигоми, Глдани, Варкетили)?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Да, обслуживаем все районы Тбилиси и пригороды (Рустави, Мцхета). Возможен выезд в тот же день.
                         </p>
                     </details>
@@ -2795,7 +2753,7 @@
                             <span>Минимальное время заказа?</span>
                             <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500">
+                        <p class="mt-4 text-gray-500 leading-relaxed pl-2 border-l-4 border-red-500 text-sm md:text-base">
                             Оплата почасовая за фактически отработанное время.
                         </p>
                     </details>
@@ -2803,16 +2761,16 @@
             </div>
 
             <!-- Block 7: CTA -->
-            <div class="bg-gradient-to-br from-red-600 to-red-700 p-12 rounded-3xl text-center shadow-xl">
-                <h2 class="text-amber-100 mb-4 text-3xl font-bold">💪 Нужна физическая помощь?</h2>
-                <p class="text-red-100 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+            <div class="bg-gradient-to-br from-red-600 to-red-700 p-8 md:p-12 rounded-3xl text-center shadow-xl">
+                <h2 class="text-amber-100 mb-4 text-2xl md:text-3xl font-bold break-words leading-tight">💪 Нужна физическая помощь?</h2>
+                <p class="text-red-100 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Не срывайте спину — доверьте тяжести профессионалам. Бригада будет у вас в течение часа.
                 </p>
                 <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-amber-100 hover:bg-white text-red-800 px-8 py-4 rounded-full font-bold transition-all shadow-lg">
+                    <a href="https://t.me/PereezdBatumiBot" target="_blank" class="bg-amber-100 hover:bg-white text-red-800 px-8 py-4 rounded-full font-bold transition-all shadow-lg text-sm md:text-base">
                         👷 Вызвать грузчиков
                     </a>
-                    <a href="tel:+995597048630" class="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-full font-bold transition-all ring-2 ring-amber-100/50">
+                    <a href="tel:+995597048630" class="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-full font-bold transition-all ring-2 ring-amber-100/50 text-sm md:text-base">
                         📞 Позвонить
                     </a>
                 </div>
@@ -3057,24 +3015,24 @@
         desc_short: "Регулярные рейсы между городами. Сборные грузы от 1 коробки или переезд целой квартиры. Доставка от двери до двери.",
         content: `
             <!-- Block 2: Service Types -->
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl mb-12 border-l-4 border-blue-500">
-                <h2 class="mb-6 text-blue-900 text-3xl text-center font-bold">🚚 Два способа перевозки</h2>
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 md:p-8 rounded-2xl mb-12 border-l-4 border-blue-500">
+                <h2 class="mb-6 text-blue-900 text-2xl md:text-3xl text-center font-bold">🚚 Два способа перевозки</h2>
                 <div class="grid gap-6">
                     <div class="bg-white/90 p-6 rounded-2xl shadow-sm">
-                        <h3 class="mb-2 text-blue-700 text-2xl font-bold">1. 📦 Сборный груз (Попутно)</h3>
-                        <p class="mb-2 font-bold text-emerald-600">Выгодно для небольших вещей</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Идеально, если вам нужно передать холодильник, диван, стиральную машину или 5-10 коробок с личными вещами. Мы кладем ваш груз в машину, которая уже едет в нужный город.</p>
-                        <ul class="m-0 pl-5 text-gray-600 list-disc">
+                        <h3 class="mb-2 text-blue-700 text-xl md:text-2xl font-bold">1. 📦 Сборный груз (Попутно)</h3>
+                        <p class="mb-2 font-bold text-emerald-600 text-sm md:text-base">Выгодно для небольших вещей</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed text-sm md:text-base">Идеально, если вам нужно передать холодильник, диван, стиральную машину или 5-10 коробок с личными вещами. Мы кладем ваш груз в машину, которая уже едет в нужный город.</p>
+                        <ul class="m-0 pl-5 text-gray-600 list-disc text-sm md:text-base">
                             <li class="mb-1"><strong>Цена:</strong> Дешевле на 50%.</li>
                             <li><strong>Срок:</strong> Доставка в течение 1-2 дней.</li>
                         </ul>
                     </div>
 
                     <div class="bg-white/90 p-6 rounded-2xl shadow-sm">
-                        <h3 class="mb-2 text-red-700 text-2xl font-bold">2. 🚀 Отдельная машина (Квартирный переезд)</h3>
-                        <p class="mb-2 font-bold text-emerald-600">Для полного переезда семьи</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Вы заказываете машину целиком. В кузове едут только ваши вещи. Машина подается в удобное вам время, грузится и сразу выезжает в пункт назначения.</p>
-                        <ul class="m-0 pl-5 text-gray-600 list-disc">
+                        <h3 class="mb-2 text-red-700 text-xl md:text-2xl font-bold">2. 🚀 Отдельная машина (Квартирный переезд)</h3>
+                        <p class="mb-2 font-bold text-emerald-600 text-sm md:text-base">Для полного переезда семьи</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed text-sm md:text-base">Вы заказываете машину целиком. В кузове едут только ваши вещи. Машина подается в удобное вам время, грузится и сразу выезжает в пункт назначения.</p>
+                        <ul class="m-0 pl-5 text-gray-600 list-disc text-sm md:text-base">
                             <li class="mb-1"><strong>Цена:</strong> Оплата за рейс.</li>
                             <li><strong>Бонус:</strong> Вы можете ехать в кабине с водителем бесплатно.</li>
                         </ul>
@@ -3084,28 +3042,28 @@
 
             <!-- Block 3: Use Cases -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">🇬🇪 Популярные направления перевозок</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">🇬🇪 Популярные направления перевозок</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 text-center">
-                        <div class="text-4xl mb-4">🏠</div>
+                        <div class="text-4xl md:text-5xl mb-4">🏠</div>
                         <h3 class="text-black mb-3 text-lg font-bold">Сезонный переезд</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">Перевозка вещей на дачу или на море (Тбилиси ↔ Батуми) в начале и конце сезона.</p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 text-center">
-                        <div class="text-4xl mb-4">🛍️</div>
+                        <div class="text-4xl md:text-5xl mb-4">🛍️</div>
                         <h3 class="text-black mb-3 text-lg font-bold">Доставка из магазинов Тбилиси</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">Купили мебель в Domino, Gorgia, IKEA (доставка) или технику в Тбилиси? Мы заберем её со склада магазина и привезем к вам в Батуми, Кутаиси или Зугдиди.</p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 text-center">
-                        <div class="text-4xl mb-4">📦</div>
+                        <div class="text-4xl md:text-5xl mb-4">📦</div>
                         <h3 class="text-black mb-3 text-lg font-bold">Личные вещи и Посылки</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">Отправка коробок, чемоданов, велосипедов и колясок родственникам в другой город.</p>
                     </div>
 
                     <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 text-center">
-                        <div class="text-4xl mb-4">🛋️</div>
+                        <div class="text-4xl md:text-5xl mb-4">🛋️</div>
                         <h3 class="text-black mb-3 text-lg font-bold">Мебель и Техника</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">Перевозка крупногабаритных предметов: шкафы, кровати, пианино, холодильники (только стоя!).</p>
                     </div>
@@ -3114,32 +3072,32 @@
 
             <!-- Block 4: Pricing -->
             <div class="mb-12">
-                <h2 class="text-center text-3xl mb-8 text-black font-bold">💰 Ориентировочные цены (Отдельная машина)</h2>
+                <h2 class="text-center text-2xl md:text-3xl mb-8 text-black font-bold break-words leading-tight">💰 Ориентировочные цены (Отдельная машина)</h2>
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 overflow-x-auto">
                     <table class="w-full border-collapse min-w-[600px]">
                         <thead>
                             <tr class="bg-gradient-to-br from-amber-500 to-amber-600 text-white">
-                                <th class="p-4 text-left">Направление</th>
-                                <th class="p-4 text-left">Спринтер (1.5 т)</th>
-                                <th class="p-4 text-left">Грузовик (3-5 т)</th>
-                                <th class="p-4 text-left">Попутный груз (от)</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Направление</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Спринтер (1.5 т)</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Грузовик (3-5 т)</th>
+                                <th class="p-3 md:p-4 text-left text-base md:text-lg">Попутный груз (от)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Тбилиси ↔ Батуми</td>
-                                <td class="p-5">от 450 ₾</td>
-                                <td class="p-5">от 700 ₾</td>
-                                <td class="p-5 font-bold text-emerald-600">от 80 ₾</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Тбилиси ↔ Батуми</td>
+                                <td class="p-3 md:p-5 text-sm md:text-base">от 450 ₾</td>
+                                <td class="p-3 md:p-5 text-sm md:text-base">от 700 ₾</td>
+                                <td class="p-3 md:p-5 font-bold text-emerald-600 text-sm md:text-base">от 80 ₾</td>
                             </tr>
                             <tr class="border-b border-gray-200 bg-gray-50">
-                                <td class="p-5 font-semibold">Тбилиси ↔ Кутаиси</td>
-                                <td class="p-5">от 300 ₾</td>
-                                <td class="p-5">от 500 ₾</td>
-                                <td class="p-5 font-bold text-emerald-600">от 50 ₾</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Тбилиси ↔ Кутаиси</td>
+                                <td class="p-3 md:p-5 text-sm md:text-base">от 300 ₾</td>
+                                <td class="p-3 md:p-5 text-sm md:text-base">от 500 ₾</td>
+                                <td class="p-3 md:p-5 font-bold text-emerald-600 text-sm md:text-base">от 50 ₾</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="p-5 font-semibold">Тбилиси ↔ Поти</td>
+                                <td class="p-3 md:p-5 font-semibold text-sm md:text-base">Тбилиси ↔ Поти</td>
                                 <td class="p-5">от 400 ₾</td>
                                 <td class="p-5">от 650 ₾</td>
                                 <td class="p-5 font-bold text-emerald-600">от 70 ₾</td>

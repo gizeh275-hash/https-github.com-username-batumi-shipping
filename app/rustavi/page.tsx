@@ -30,14 +30,14 @@ export default function RustaviPage() {
                 />
 
                 {/* About Rustavi Services */}
-                <section className="container mx-auto px-4 py-20">
-                    <div className="glass-strong p-10 rounded-2xl max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold mb-6">Грузоперевозки в Рустави</h2>
-                        <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                <section className="container mx-auto px-4 py-10 md:py-20">
+                    <div className="glass-strong p-6 md:p-10 rounded-2xl max-w-4xl mx-auto">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-6">Грузоперевозки в Рустави</h2>
+                        <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
                             Предоставляем полный спектр услуг по грузоперевозкам в Рустави.
                             Промышленный город недалеко от Тбилиси (всего 25 км) - популярен для офисных переездов и логистики.
                         </p>
-                        <p className="text-gray-300 text-lg leading-relaxed">
+                        <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                             Наши автомобили оснащены всем необходимым для безопасной транспортировки мебели и грузов любого размера.
                             Опытные грузчики аккуратно упакуют и перевезут ваши вещи.
                         </p>

@@ -190,7 +190,7 @@ export default function Home() {
                                         <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                             Вывозим строительный мусор и старую мебель на официальный полигон. Никаких свалок в лесу и штрафов от мэрии.
                                         </p>
-                                        <Link href="/trash" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
+                                        <Link href="/service/trash" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3">
                                             Подробнее <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </div>
