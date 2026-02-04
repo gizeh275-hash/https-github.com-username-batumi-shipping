@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import CitiesScroll from '@/components/CitiesScroll';
 import { servicesData, ServiceSlug } from '@/lib/servicesData';
 import { CITIES } from '@/lib/cities';
+import TranslatedContent from '@/lib/TranslatedContent';
 
 
 type Props = {
@@ -123,11 +124,15 @@ export default async function ServiceDetailPage({ params }: Props) {
                     <div className="max-w-4xl mx-auto">
                         <div
                             className="glass-strong p-5 md:p-10 rounded-2xl prose prose-lg max-w-none w-full overflow-x-hidden"
-                            dangerouslySetInnerHTML={{ __html: service.content }}
                             style={{
                                 color: '#374151',
                             }}
-                        />
+                        >
+                            <TranslatedContent
+                                htmlContent={service.content}
+                                cacheKey={slug}
+                            />
+                        </div>
                     </div>
                 </section>
 

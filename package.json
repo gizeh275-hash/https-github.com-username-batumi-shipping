@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@iamtraction/google-translate": "^2.0.1",
         "@supabase/supabase-js": "^2.47.10",
         "ai": "^4.1.15",
         "framer-motion": "^11.15.0",
@@ -22,6 +23,7 @@
         "@types/node": "^22.10.5",
         "@types/react": "^19.0.6",
         "@types/react-dom": "^19.0.2",
+        "@vitalets/google-translate-api": "^9.2.1",
         "autoprefixer": "^10.4.20",
         "eslint": "^9.18.0",
         "eslint-config-next": "^16.1.1",

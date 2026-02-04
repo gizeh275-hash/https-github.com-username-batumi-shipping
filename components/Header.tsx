@@ -6,15 +6,13 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Truck, Globe, ChevronDown, ArrowRight, Phone } from 'lucide-react';
-import { translations, Language } from '@/lib/translations';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isCitiesOpen, setIsCitiesOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
-    const [lang, setLang] = useState<Language>('ru');
-
-    const t = translations[lang];
+    const { language, setLanguage } = useLanguage();
 
     const BOT_URL = 'https://t.me/pereezdBatumiGE';
 
@@ -46,7 +44,7 @@ export default function Header() {
                             onMouseLeave={() => setIsServicesOpen(false)}
                         >
                             <button className="flex items-center gap-1 hover:text-primary-400 transition">
-                                {t.nav.services}
+                                Услуги
                                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                             </button>
 
@@ -166,8 +164,8 @@ export default function Header() {
                         <div className="flex items-center gap-2 glass px-3 py-1 rounded-full">
                             <Globe className="w-4 h-4" />
                             <select
-                                value={lang}
-                                onChange={(e) => setLang(e.target.value as Language)}
+                                value={language}
+                                onChange={(e) => setLanguage(e.target.value as 'ru' | 'en' | 'ka')}
                                 className="bg-transparent border-none outline-none cursor-pointer text-sm"
                             >
                                 <option value="ru">RU</option>
@@ -183,7 +181,7 @@ export default function Header() {
                             rel="noopener noreferrer"
                             className="gradient-bg px-6 py-2 rounded-full font-semibold hover:opacity-90 transition"
                         >
-                            {t.hero.cta}
+                            Рассчитать стоимость в Telegram
                         </a>
                     </div>
 
@@ -199,7 +197,7 @@ export default function Header() {
                 {/* Mobile Navigation */}
                 {isOpen && (
                     <div className="md:hidden mt-4 pb-24 flex flex-col gap-4 animate-slide-down h-[calc(100vh-80px)] overflow-y-auto">
-                        <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border-white/5 pb-2">{t.nav.home}</Link>
+                        <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary-400 transition font-medium border-b border white/5 pb-2">Главная</Link>
 
                         {/* Mobile Services */}
                         <div className="border-b border-white/5 pb-2">
@@ -207,7 +205,7 @@ export default function Header() {
                                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                                 className="flex items-center justify-between cursor-pointer py-1"
                             >
-                                <span className="font-medium">{t.nav.services}</span>
+                                <span className="font-medium">Услуги</span>
                                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                             </div>
 
@@ -250,8 +248,8 @@ export default function Header() {
                         <div className="flex items-center gap-2 mt-2">
                             <Globe className="w-4 h-4" />
                             <select
-                                value={lang}
-                                onChange={(e) => setLang(e.target.value as Language)}
+                                value={language}
+                                onChange={(e) => setLanguage(e.target.value as 'ru' | 'en' | 'ka')}
                                 className="bg-transparent border border-white/20 rounded px-2 py-1 outline-none text-white bg-black/50"
                             >
                                 <option value="ru">Русский</option>

@@ -5,6 +5,7 @@ import './globals.css';
 import FloatingContactWidget from '@/components/FloatingContactWidget';
 import ScrollToTop from '@/components/ScrollToTop';
 import MobileFloatingNav from '@/components/MobileFloatingNav';
+import { LanguageProvider } from '@/lib/LanguageContext';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' });
 
@@ -29,10 +30,12 @@ export default function RootLayout({
     return (
         <html lang="ru" className={inter.variable}>
             <body className="overflow-x-hidden">
-                {children}
-                <FloatingContactWidget />
-                <ScrollToTop />
-                <MobileFloatingNav />
+                <LanguageProvider>
+                    {children}
+                    <FloatingContactWidget />
+                    <ScrollToTop />
+                    <MobileFloatingNav />
+                </LanguageProvider>
             </body>
         </html>
     );
