@@ -44,7 +44,7 @@ export default function Hero({ title, subtitle, ctaText, ctaLink, showBackground
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                        className="text-5xl md:text-7xl font-bold mb-6"
+                        className="text-3xl md:text-6xl font-bold mb-6 leading-tight"
                     >
                         <span className={useGradientText ? "gradient-text" : "text-black"}>{title}</span>
                     </motion.h1>
@@ -53,7 +53,7 @@ export default function Hero({ title, subtitle, ctaText, ctaLink, showBackground
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                        className="text-xl md:text-2xl text-gray-700 mb-12"
+                        className="text-base md:text-xl text-gray-700 mb-12 break-words"
                     >
                         {subtitle}
                     </motion.p>
