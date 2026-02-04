@@ -85,10 +85,10 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Квартирный переезд</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
+                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-4">
                                             Учитывая высокую влажность Батуми, мы используем <strong>усиленную упаковку</strong> для техники и книг, чтобы они не отсырели.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
+                                        <p className="hidden md:block text-sm text-gray-500 italic mb-6">
                                             Знаем правила грузовых лифтов в ЖК Alley Palace, Porta Batumi Tower.
                                         </p>
                                         <Link href="/service/batumi_moving" className="mt-auto inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -109,7 +109,7 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Офисный переезд</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                             Перевозим технику, мебель и архивы с документами. Принимаем безнал, выдаем закрывающие документы. Организуем переезд без простоя вашего бизнеса.
                                         </p>
                                         <Link href="/service/batumi_office" className="mt-auto inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -133,7 +133,7 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Услуги грузчиков</h3>
-                                        <p className="text-black leading-relaxed mb-6">
+                                        <p className="hidden md:block text-black leading-relaxed mb-6">
                                             Трезвые ребята с инструментами. Разберут шкаф, вынесут холодильник с 9 этажа (даже если нет лифта в Старом Батуми), загрузят фуру.
                                         </p>
                                         <Link href="/service/batumi_movers" className="mt-auto inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-yellow-400 font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -154,7 +154,7 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Вывоз мусора</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-6">
                                             Вывозим строительный мусор и старую мебель на официальный полигон Аджарии. Предоставляем документы об утилизации, чтобы у вас не было проблем с инспекцией.
                                         </p>
                                         <Link href="/service/batumi_trash" className="mt-auto inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -175,10 +175,10 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Грузовое такси</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
+                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-4">
                                             Быстрая доставка из <strong>Domino, Gorgia</strong> и рынка Хопа прямо до двери.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
+                                        <p className="hidden md:block text-sm text-gray-500 italic mb-6">
                                             Идеально для 1-2 предметов, когда полная машина не нужна.
                                         </p>
                                         <Link href="/service/batumi_taxi" className="mt-auto inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -199,10 +199,10 @@ export default function BatumiPage() {
                                     </div>
                                     <div className="p-8 flex flex-col flex-grow">
                                         <h3 className="text-2xl font-bold text-black mb-4">Междугородние рейсы</h3>
-                                        <p className="text-gray-600 leading-relaxed mb-4">
+                                        <p className="hidden md:block text-gray-600 leading-relaxed mb-4">
                                             Регулярные рейсы <strong>Батуми — Тбилиси</strong>. Едем через перевал или автобан.
                                         </p>
-                                        <p className="text-sm text-gray-500 italic mb-6">
+                                        <p className="hidden md:block text-sm text-gray-500 italic mb-6">
                                             Заберем вещи из Кобулети, Чакви, Гонио по пути. Страхование груза включено.
                                         </p>
                                         <Link href="/service/intercity" className="mt-auto inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">

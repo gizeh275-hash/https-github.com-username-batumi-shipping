@@ -88,10 +88,10 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Квартирный переезд</h3>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
                                             Переезд под ключ в любой район. Упаковка, разборка мебели, грузчики.
                                         </p>
-                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
                                             Перевезем даже по серпантинам в Цхнети или Коджори.
                                         </p>
                                         <Link href="/service/tbilisi_moving" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -112,7 +112,7 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Офисный переезд</h3>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
                                             Переезд офисов в бизнес-центры. Работаем по безналу, документы на руки. Возможен ночной переезд.
                                         </p>
                                         <Link href="/service/tbilisi_office" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -136,7 +136,7 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 break-words">Услуги грузчиков</h3>
-                                        <p className="text-sm md:text-base text-blue-50 leading-relaxed mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-blue-50 leading-relaxed mb-4 md:mb-6 break-words">
                                             Крепкие ребята: подъем без лифта, разгрузка фур, перестановка мебели.
                                         </p>
                                         <Link href="/service/tbilisi_movers" className="mt-auto inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -157,7 +157,7 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Вывоз мусора</h3>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6 break-words">
                                             Вывоз мусора и мебели на полигон. Соблюдаем законы об утилизации.
                                         </p>
                                         <Link href="/service/tbilisi_trash" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -178,10 +178,10 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Грузовое такси</h3>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
                                             Подача машины за 30-60 мин.
                                         </p>
-                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
                                             Доставка из магазинов (Domino, Gorgia, Modus).
                                         </p>
                                         <Link href="/service/tbilisi_taxi" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
@@ -202,10 +202,10 @@ export default function TbilisiPage() {
                                     </div>
                                     <div className="p-6 md:p-8 flex flex-col flex-grow">
                                         <h3 className="text-xl md:text-2xl font-bold text-black mb-3 md:mb-4 break-words">Междугородние рейсы</h3>
-                                        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
+                                        <p className="hidden md:block text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4 break-words">
                                             Рейсы <strong>Тбилиси — Батуми</strong>. Попутные грузы и отдельные машины.
                                         </p>
-                                        <p className="text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
+                                        <p className="hidden md:block text-xs md:text-sm text-gray-500 italic mb-4 md:mb-6 break-words">
                                             Заберем груз из любой точки и доставим по Грузии.
                                         </p>
                                         <Link href="/service/intercity" className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all group-hover:gap-3 w-fit">
