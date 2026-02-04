@@ -47,7 +47,7 @@ export default function CitiesPage() {
                             return (
                                 <Link
                                     key={city.slug}
-                                    href={`/cities/${city.slug}`}
+                                    href={`/${city.slug}`}
                                     className="group bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-yellow-400 hover:shadow-xl transition-all"
                                 >
                                     <div className="flex items-start justify-between mb-4">
@@ -85,7 +85,7 @@ export default function CitiesPage() {
                             return (
                                 <Link
                                     key={city.slug}
-                                    href={`/cities/${city.slug}`}
+                                    href={`/${city.slug}`}
                                     className="group bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-yellow-400 hover:shadow-xl transition-all"
                                 >
                                     <div className="flex items-start justify-between mb-4">
@@ -122,7 +122,7 @@ export default function CitiesPage() {
                             return (
                                 <Link
                                     key={city.slug}
-                                    href={`/cities/${city.slug}`}
+                                    href={`/${city.slug}`}
                                     className="group bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-yellow-400 hover:shadow-lg transition-all text-center"
                                 >
                                     <h3 className="text-lg font-bold group-hover:text-yellow-600 transition mb-2">
@@ -151,7 +151,7 @@ export default function CitiesPage() {
                             return (
                                 <Link
                                     key={city.slug}
-                                    href={`/cities/${city.slug}`}
+                                    href={`/${city.slug}`}
                                     className="group bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-yellow-400 hover:shadow-lg transition-all text-center"
                                 >
                                     <h3 className="text-lg font-bold group-hover:text-yellow-600 transition mb-2">
